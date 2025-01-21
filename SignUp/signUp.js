@@ -46,7 +46,10 @@ function vaildPassword() {
     if (password.value.length < 8) {
         errorPassword.style.display="block"  
     }
-    errorPassword.style.display="none"  
+    {
+        errorPassword.style.display="none"  
+
+    }
 
     
 }
@@ -84,7 +87,7 @@ function validConfirmPassword() {
       localStorage.setItem("password", password.value); 
       
       SucessMessage.style.display = "block";
-      window.location.href = "login.html";
+      window.location.href = "../Login/login.html";
 
   }
 }
@@ -108,7 +111,7 @@ submitBottun.addEventListener("click" , FormSubmit)
         email.value = storedEmail;
       }
       if (storedPassword) {
-        password.value = storedEmail;
+        password.value = storedPassword;
       }
     }
   

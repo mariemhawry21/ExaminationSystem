@@ -49,9 +49,17 @@ body {
     width: 100%;
   }
 }
-a {
+.agreePolicyLink {
   text-decoration: none;
   color: rgb(85, 82, 82);
+}
+.loginPage{
+text-decoration: none;
+  color: rgb(85, 82, 82);
+}
+.loginPageParaghrph
+{
+    margin-top: 3%;
 }
 .error {
   display: none;
