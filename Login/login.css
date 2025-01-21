@@ -79,9 +79,12 @@ body {
   .errorPassword
   {
     display: none;
+    color: red;
   }
   .errorButton{
     display: none;
+    color: red;
+
   }
   @media (max-width: 768px) {
     .loginPicContiner {

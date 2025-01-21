@@ -31,7 +31,7 @@ function formSubmit(e) {
   let isFormValid = validEmail() && validPassword(); 
 
   if (isFormValid) {
-    const users = JSON.parse(localStorage.getItem("users")) || []; 
+    const users = JSON.parse(localStorage.getItem("users")); 
 
     let userFound = false; 
 
