@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    background-color: #ffffff !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    padding: 10px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .input:focus {
+    background-color: #ffffff !important;
+    border-color: #e7e8e9 !important;
+    outline: none;
+  }
+  
+  .input:hover {
+    background-color: #ffffff !important;
+    border-color: #e7e8e9 !important;
+    outline: none;
+  }
+  
+  .btnLogin {
+    border-radius: 5px;
+    color: rgb(221, 218, 225);
+    background-color: rgb(98, 52, 142) !important;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+
+    
+  }
+  .loginPicContiner
+  {
+    text-align: center;
+  }
+ 
+  .btnLogin:hover {
+    background-color: rgb(85, 46, 123) !important;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    display: block;
+    margin-top: 10px;
+  }
+  
+  
+  .contactP {
+    color: rgb(98, 52, 142);
+    font-size: 18px;
+  }
+  
+  .welcomeP {
+    color: #333;
+    font-size: 16px;
+  }
+  .errorEmail
+  {
+    display: none;
+
+  }
+  .errorPassword
+  {
+    display: none;
+  }
+  .errorButton{
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .loginPicContiner {
+      display: none;
+    }
+    .loginFormContiner {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .loginPicContiner {
+        display: none;
+      }
+      .loginFormContiner {
+        width: 100%;
+      }
+  }
+  
