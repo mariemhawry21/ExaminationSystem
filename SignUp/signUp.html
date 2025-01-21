@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./signUp.css" />
+  </head>
+  <body>
+    <div class="container row mt-5">
+      <div class="col-6 text-center container picContiner">
+        <img src="bro.png" alt="registrationPic" class="imgRegister" />
+      </div>
+
+      <div class="col-6 formContiner container">
+        <div class="form">
+        <div class="text-center">
+          <p>Contact us</p>
+          <h1 class="mb-4">Register</h1>
+          <p>We'd love to hear from you. Please fill out this form.</p>
+        </div>
+
+        <form id="registrationForm">
+          <div class="row">
+            <div class="mb-4 col-6">
+              <label for="firstName" class="form-label">First Name :</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="firstName"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="mb-4 col-5">
+              <label for="lastName" class="form-label">Last Name :</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="lastName"
+                class="form-control"
+                required
+              />
+            </div>
+            <p class="errorName error">
+              Should be series of alphabetical characters
+            </p>
+          </div>
+
+          <div class="mb-4 col-11">
+            <label for="email" class="form-label">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@gmail.com"
+              class="form-control"
+              required
+            />
+            <p class="errorEmail error">Should validate real email address</p>
+          </div>
+          <div class="mb-4 col-11 input-container">
+            <label for="password" class="form-label">Password :</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="********"
+              class="form-control"
+              required
+            />
+
+            <p class="errorpassword error">
+              Lengrh should be more than or equal 8
+            </p>
+          </div>
+          <div class="mb-4 col-11 input-container">
+            <label for="confirmPassword" class="form-label"
+              >Confirm Password:</label
+            >
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="********"
+              class="form-control"
+              required
+            />
+            <p class="errorconfirmpassword error">
+              The 2 fildes should be matching
+            </p>
+          </div>
+          <div class="form-check mb-4 col-11">
+            <input
+              type="checkbox"
+              id="agreePolicy"
+              name="agreePolicy"
+              class="form-check-input"
+            />
+            <label for="agreePolicy" class="form-check-label">
+            <p> I agree to the
+                <a class="agreePolicyLink" href="https://policies.google.com/?hl=ar" target="_blank">
+                  <b>friendly policy</b></a
+                ></p>
+             
+            </label>
+            <p class="errorCheckbox error">You should Check.</p>
+          </div>
+          <div>
+          <button type="submit"class="btn col-11 btnSubmit" action="login.html">Register</button>
+        </div>
+        <div class="loginPageParaghrph">
+            <p> Have already an account ?
+                <a class="loginPage" href="../Login/login.html" target="_self">
+                  <b>Log in</b></a
+                ></p>           
+        </div>
+        <p class="SucessP">Sucess Send </p>
+
+        </form>
+      </div>
+    </div>
+    </div>
+
+    <script src="./signUp.js"></script>
+  </body>
+</html>
