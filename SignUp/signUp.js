@@ -88,16 +88,15 @@ function validConfirmPassword() {
 
   }
 }
-submitBottun.addEventListener("click" , FormSubmit)
-
-
-    
+submitBottun.addEventListener("click" , FormSubmit)   
   
 
     function loadFormData() {
       const storedFirstName = localStorage.getItem("firstName");
       const storedLastName = localStorage.getItem("lastName");
       const storedEmail = localStorage.getItem("email");
+      const storedPassword = localStorage.getItem("password");
+
   
       if (storedFirstName) {
         firstName.value = storedFirstName;
@@ -107,6 +106,9 @@ submitBottun.addEventListener("click" , FormSubmit)
       }
       if (storedEmail) {
         email.value = storedEmail;
+      }
+      if (storedPassword) {
+        password.value = storedEmail;
       }
     }
   
