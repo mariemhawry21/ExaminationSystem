@@ -4,151 +4,117 @@ const lastName = document.getElementById("lastName");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
-const agreePolicy = document.getElementById("agreePolicy");  
+const agreePolicy = document.getElementById("agreePolicy");
 const errorName = document.querySelector(".errorName");
 const errorEmail = document.querySelector(".errorEmail");
 const errorPassword = document.querySelector(".errorpassword");
 const errorConfirmPassword = document.querySelector(".errorconfirmpassword");
 const errorCheckbox = document.querySelector(".errorCheckbox");
-const submitBottun = document.querySelector(".btnSubmit");
-const SucessMessage = document.querySelector(".SucessP");
-
+const submitButton = document.querySelector(".btnSubmit");
+const successMessage = document.querySelector(".SucessP");
 
 function validFirstName() {
-    const regExpressionName = /^[a-zA-Z]+$/;
-    if (!regExpressionName.test(firstName.value)) {
-        errorName.style.display = "block";
-        return 0;
-    } else {
-        errorName.style.display = "none";
-        return 1;
-
-    }    
+  const regExpressionName = /^[a-zA-Z]+$/;
+  if (!regExpressionName.test(firstName.value)) {
+    errorName.textContent = "First name can only contain letters.";
+    errorName.style.display = "block";
+    return 0;
+  } else {
+    errorName.style.display = "none";
+    return 1;
+  }
 }
-function validLasttName() {
-    const regExpressionName = /^[a-zA-Z]+$/;
-    if (!regExpressionName.test(lastName.value)) {
-        errorName.style.display = "block";
-        return 0;
-    } else {
-        errorName.style.display = "none";
-        return 1;
 
-    }    
-}  
-
-function vaildEmail() {
-    const regExpressionEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    if (!regExpressionEmail.test(email.value)) {
-        errorEmail.style.display  ="block";
-        return 0;
-    }
-    else
-    {
-        errorEmail.style.display  ="none";
-        return 1;
-
-
-    }       
-
+function validLastName() {
+  const regExpressionName = /^[a-zA-Z]+$/;
+  if (!regExpressionName.test(lastName.value)) {
+    errorName.textContent = "Last name can only contain letters.";
+    errorName.style.display = "block";
+    return 0;
+  } else {
+    errorName.style.display = "none";
+    return 1;
+  }
 }
-function vaildPassword() {
-    if (password.value.length < 8) {
-        errorPassword.style.display="block" ;
-        return 0;
- 
-    }
-    {
-        errorPassword.style.display="none"  ;
-        return 1;
 
-
-    }
-
-    
+function validEmail() {
+  const regExpressionEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  if (!regExpressionEmail.test(email.value)) {
+    errorEmail.textContent = "Please enter a valid email address.";
+    errorEmail.style.display = "block";
+    return 0;
+  } else {
+    errorEmail.style.display = "none";
+    return 1;
+  }
 }
+
+function validPassword() {
+  if (password.value.length < 8) {
+    errorPassword.textContent = "Password must be at least 8 characters.";
+    errorPassword.style.display = "block";
+    return 0;
+  } else {
+    errorPassword.style.display = "none";
+    return 1;
+  }
+}
+
 function validConfirmPassword() {
-    if (password.value !== confirmPassword.value) {
-      errorConfirmPassword.style.display = "block";
-      return 0;
-
-    } else {
-      errorConfirmPassword.style.display = "none";
-      return 1;
-
-    }
+  if (password.value !== confirmPassword.value) {
+    errorConfirmPassword.textContent = "Passwords do not match.";
+    errorConfirmPassword.style.display = "block";
+    return 0;
+  } else {
+    errorConfirmPassword.style.display = "none";
+    return 1;
   }
-  function validCheckbox() {
-    if (!agreePolicy.checked) {
-      errorCheckbox.style.display = "block";
-      return 0;
+}
 
-     
-    } else {
-      errorCheckbox.style.display = "none";
-      return 1;
-
-      
-    }
+function validCheckbox() {
+  if (!agreePolicy.checked) {
+    errorCheckbox.textContent = "You must agree to the policy.";
+    errorCheckbox.style.display = "block";
+    return 0;
+  } else {
+    errorCheckbox.style.display = "none";
+    return 1;
   }
-  firstName.addEventListener("input", validFirstName);
-    lastName.addEventListener("input", validLasttName);
-    email.addEventListener("input", vaildEmail);
-    password.addEventListener("input", vaildPassword);
-    confirmPassword.addEventListener("input", validConfirmPassword);
-    agreePolicy.addEventListener("change", validCheckbox);
-  
-  function FormSubmit(e) {
-    e.preventDefault();
+}
 
-    let isFormValid =
+firstName.addEventListener("input", validFirstName);
+lastName.addEventListener("input", validLastName);
+email.addEventListener("input", validEmail);
+password.addEventListener("input", validPassword);
+confirmPassword.addEventListener("input", validConfirmPassword);
+agreePolicy.addEventListener("change", validCheckbox);
+
+function FormSubmit(e) {
+  e.preventDefault();
+
+  let isFormValid =
     validFirstName() &&
-    validLasttName() &&
-    vaildEmail() &&
-    vaildPassword() &&
+    validLastName() &&
+    validEmail() &&
+    validPassword() &&
     validConfirmPassword() &&
     validCheckbox();
 
-    if (isFormValid) {
-      localStorage.setItem("firstName", firstName.value);
-      localStorage.setItem("lastName", lastName.value);
-      localStorage.setItem("email", email.value);
-      localStorage.setItem("password", password.value); 
-      
-      SucessMessage.style.display = "block";
-      setTimeout(() => {
-        window.location.href = "../Login/login.html";
+  if (isFormValid) {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const newUser = {
+      username: firstName.value + " " + lastName.value,
+      email: email.value,
+      password: password.value,
+    };
+    users.push(newUser);
+    localStorage.setItem("users", JSON.stringify(users));
 
-      }, 1000);
-
+    successMessage.style.display = "block";
+    setTimeout(() => {
+      window.location.href = "../Login/login.html";
+    }, 1000);
   }
 }
-submitBottun.addEventListener("click" , FormSubmit)   
-  
 
-    function loadFormData() {
-      const storedFirstName = localStorage.getItem("firstName");
-      const storedLastName = localStorage.getItem("lastName");
-      const storedEmail = localStorage.getItem("email");
-      const storedPassword = localStorage.getItem("password");
-
-  
-      if (storedFirstName) {
-        firstName.value = storedFirstName;
-      }
-      if (storedLastName) {
-        lastName.value = storedLastName;
-      }
-      if (storedEmail) {
-        email.value = storedEmail;
-      }
-      if (storedPassword) {
-        password.value = storedPassword;
-      }
-    }
-  
-    loadFormData();
-  
-    
-  
-  
+submitButton.addEventListener("click", FormSubmit);
