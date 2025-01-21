@@ -102,6 +102,13 @@ function FormSubmit(e) {
 
   if (isFormValid) {
     let users = JSON.parse(localStorage.getItem("users")) || [];
+    const findUser = users.find(user => user.email === email.value);
+    
+    if (findUser) {
+      errorEmail.textContent = "An account with this email already exists.";
+      errorEmail.style.display = "block";
+      return 1;
+    }
     const newUser = {
       username: firstName.value + " " + lastName.value,
       email: email.value,
