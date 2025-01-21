@@ -43,7 +43,7 @@ function formSubmit(e) {
     }
 
     if (userFound) {
-      window.location.href = "home.html";
+      window.location.href = "../index.html";
       console.log("SUCCESS"); 
     } else {
       errorButton.style.display = "block"; 
