@@ -16,7 +16,7 @@ body {
 }
 
 .btnSubmit:hover {
-  background-color: #9747ff;
+  background-color: #7f39dc;
   color: white;
 }
 
@@ -29,24 +29,6 @@ body {
 
 }
 
-@media (max-width: 768px) {
-  .picContiner {
-    display: none;
-  }
-  .formContiner {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .picContiner {
-    display: none;
-  }
-  .formContiner {
-    max-width: 100%;
-    width: 100%;
-  }
-}
 .agreePolicyLink {
   color: rgb(85, 82, 82);
 }
