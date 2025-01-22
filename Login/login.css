@@ -93,6 +93,10 @@ body {
   display: none;
   color: red;
 }
+.createAccount{
+  color: #434145;
+  font-size: 16 PX;
+}
 
 @media (max-width: 768px) {
   body {

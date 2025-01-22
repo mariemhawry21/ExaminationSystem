@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
@@ -19,47 +19,62 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="Continer row justify-content-center w-100 mt-5">
+      <div class="loginPicContiner col-md-6">
+        <img src="../Login/bro1.png" alt="loginPicContiner" />
+      </div>
 
-</head>
-<body>
-    <div class="Continer row mt-5">
-        <div class="loginPicContiner col-6" >
-            <img src="../Login/bro1.png" alt="loginPicContiner">
+      <div class="loginFormContiner col-md-6">
+        <div class="contentForm text-center mb-5">
+          <p class="contactP">contact us</p>
+          <h1>Log in</h1>
+          <p class="welecomeP">We'd love to hear from you again!</p>
+        </div>
+        <div class="formSUBJECT mb-3">
+          <label for="email" class="form-label">Email :</label>
+          <input
+            type="email"
+            name="emailInput"
+            id="emailInput"
+            class="input col-10"
+            placeholder="you@gmail.com"
+            required
+          />
+          <br />
+          <p class="errorEmail error">Please enter a valid email address.</p>
         </div>
 
-        <div class="loginFormContiner col-6 " >
-            <div class="contentForm text-center mb-5">
-                <p class="contactP">contact us</p>
-                <h1>Log in</h1>
-                <p class="welecomeP" >We'd love to hear from you again! </p>
-            </div>
-            <div class=" formSUBJECT">
-                <label for="email" class="form-label">Email :</label>
-                <input type="email" name="emailInput" id="emailInput" class="input col-10" placeholder="you@gmail.com" required/>
-                <br>
-                <p class="errorEmail error"> 
-                    Please enter a valid email address.</p>                   
-            </div>             
-
-            <div class=" password">
-                <label for="password" class="form-label">Password :</label>
-                <input type="password" name="passwordInput" id="passwordInput" class="input col-10" placeholder="********" required
-                <br>
-                <p class="errorPassword error"> Password must be at least 8 characters.</p>                   
-            </div>
-            <div class="login">
-                <button class="btnLogin text-center"  type="submit">Log In</button>
-                <P class="errorButton">You should Crreat a Account</P>
-            </div>
-            <div>
-               
-               
-            </div>
+        <div class="password mb-3">
+          <label for="password" class="form-label">Password :</label>
+          <input
+            type="password"
+            name="passwordInput"
+            id="passwordInput"
+            class="input col-10"
+            placeholder="********"
+            required
+            <br
+          />
+          <p class="errorPassword error">
+            Password must be at least 8 characters.
+          </p>
         </div>
-
-
+        <div class="login d-grid gap-2">
+          <button class="btnLogin text-center" type="submit">Log In</button>
+          <p class="errorButton">You should Crreat a Account</p>
+        </div>
+        <div>
+          <div>
+            <a class="createAccount" href="../SignUp/signUp.html">
+              create an account</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./login.js"></script>
-</body>
+  </body>
 </html>
