@@ -1,3 +1,10 @@
-.active{
-    background-color: red;
+.active {
+  background-color: red;
+}
+.error-message {
+  color: red;
+}
+#submitBTN {
+  display: none;
+  background-color: green;
 }
