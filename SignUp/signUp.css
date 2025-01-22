@@ -3,22 +3,20 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.picContiner {
-  width: 40%;
+.contactP{
+  color:#9747ff !important;
 }
-
-.formContiner {
-  width: 35%;
-}
-
 .btnSubmit {
-  background-color: rgb(127, 74, 176);
+  background-color:  #9747ff;
   color: white;
   transition: background-color 0.3s ease;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .btnSubmit:hover {
-  background-color: rgb(98, 52, 142);
+  background-color: #9747ff;
   color: white;
 }
 
@@ -50,7 +48,6 @@ body {
   }
 }
 .agreePolicyLink {
-  text-decoration: none;
   color: rgb(85, 82, 82);
 }
 .loginPage{

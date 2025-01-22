@@ -34,7 +34,7 @@ body {
 .btnLogin {
   border-radius: 5px;
   color: white;
-  background-color: rgb(98, 52, 142);
+  background-color: #9747ff;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -50,7 +50,7 @@ body {
 }
 
 .btnLogin:active {
-  background-color: rgb(60, 30, 100);
+  background-color:  #9747ff;
 }
 
 .login {
@@ -75,7 +75,7 @@ body {
 }
 
 .contactP {
-  color: rgb(98, 52, 142);
+  color: #9747ff;
   font-size: 18px;
 }
 
@@ -116,3 +116,4 @@ body {
   .loginFormContiner {
       width: 100%;
   }
+}
