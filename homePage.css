@@ -1,0 +1,164 @@
+.activeHome {
+  color: #9747ff;
+}
+.navbar-brand {
+  color: #9747ff;
+}
+.nav-link:hover {
+  color: #9747ff;
+}
+.pColor {
+  color: #9747ff;
+}
+
+.main {
+  background-color: rgb(215, 228, 239);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.navBar {
+  background-color: rgb(255, 255, 255);
+}
+.sectionAbbout{
+  background-color: #9747ff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#containerRow
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sectionAbbout .col-12 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex; 
+  flex-direction: column;
+  max-width: 100%;
+
+   
+ 
+}
+.sectionAbbout .col-12:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sectionAbbout i {
+  font-size: 2.5rem;
+  color: #9747ff;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.sectionAbbout h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sectionAbbout p {
+  color: #555;
+  margin-top: 10px;
+}
+
+
+.catagrey{
+  background-color: rgb(215, 228, 239);
+  height: 100vh;
+
+
+
+}
+.exams {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+}
+.course-card {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.course-card h2 {
+  font-size: 1.5em;
+}
+
+.course-card button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #9747ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.course-card button:hover {
+  background-color:  #8535ed;
+}
+
+.dropdown-btn
+{
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+.dropdown-content {
+  display: none;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+
+.dropdown-content.show {
+  display: block;
+}
+.cloud
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon-continer
+{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;  
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

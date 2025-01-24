@@ -22,39 +22,158 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./homePage.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Exams</a>
-            </li>
-          </ul>
-          <span class="navbar-text"> <i class="fa-solid fa-user"></i></span>
+<div>
+  <div class="navBar">
+    <nav
+        class="navbar navbar-expand-lg --background-color sticky-top bg-white w-100 mt-1 container"
+      >
+        <div class="container-fluid fs-5">
+          <a class="navbar-brand fs-5" href="#">EXAMINATION</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav d-flex justify-content-end w-100">
+              <a class="nav-link activeHome home" href="#">Home</a>
+              <a class="nav-link  " href="#About">About</a>
+              <a class="nav-link " href="#Exams">Exams</a>
+              <a class="nav-link " href="#Contact">Contact</a>
+              <a class="nav-link LogIn" href="#LogIn">LogIn</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <div class="main"> 
+      <div class=" container py-5 mt-5 containerMain  ">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 textalign-items-center-center text-md-start">
+            <h1>Take Online Exam Easily!</h1>
+            <p><b>Number of Active Users Right Now</b></p>
+            <h1 class="pColor"><b>+200</b></h1>
+          </div>
+    
+          <div class="col-12 col-md-6 text-center">
+            <img src="./fd8c85ed700ec8e0d3f60e3f94862786.png" alt="Exam Image" class="img-fluid">
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="mt-1">Welcome to our</h3>          
+        <h5 class="mt-1">Examination System – a fast, efficient, and user-friendly platform designed to simplify the process of conducting and taking exams. Whether you're a student, teacher, or administrator, our system ensures seamless management of all your examination needs.</h5>
+      
         </div>
       </div>
-    </nav>
-    <div class="exams" id="exams"></div>
-    <script src="./homePage.js"></script>
+    </div>
+
+  <div class="sectionAbbout">
+    <div class=" container">
+      <div class=" row" id="containerRow">
+        <div class=" col-12 col-md-3 mt-5 ">
+          <div><i class="fa-solid fa-globe "></i></div>
+          <h3>Convenience and Accessibility</h3>
+          <p>Take exams anytime, anywhere, with just an internet connection.</p>
+        </div>
+        <div class=" col-12 col-md-3 mt-5">
+          <div><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Real-Time Monitoring</h3>
+          <p>Stay updated with real-time statistics, including the number of active users.</p>
+        </div>
+        <div class="  col-12 col-md-3 mt-5">
+          <div><i class="fa-solid fa-lock"></i></div>
+          <h3>Secure and Reliable</h3>
+          <p>Your data is encrypted, and the system ensures a fair and transparent examination process.</p>
+        </div>
+      
+      </div>           
+    </div>
+    
+  </div>
+  <div class="category">
+    <button class="dropdown-btn" onclick="toggleDropdown()"> 
+      <div class="Front_End">
+        <div class="icon-continer">
+          <i class="fas fa-cloud"></i>
+          <p><b>Front End</b></p>
+        </div>
+        <div>
+          <a class="fas fa-chevron-down"></a>
+        </div>
+      </div>
+    </button>
+    <div class="dropdown-content">
+      <div class="exams  container" id="exams">
+    </div>    
+  </div>
+  <div class="category">
+    <button class="dropdown-btn"> 
+      <div class="cloud">
+        <div class="icon-continer">
+          <i class="fas fa-cloud"></i>
+          <p><b>cloud</b></p>
+        </div>
+        <div>
+          <a class="fas fa-chevron-down"></a>
+        </div>
+      </div>
+    </button>
+    <div class="dropdown-content">
+    </div>    
+  </div>
+  <div class="category">
+    <button class="dropdown-btn"> 
+      <div class="cloud">
+        <div class="icon-continer">
+          <i class="fas fa-cloud"></i>
+          <p><b>cloud</b></p>
+        </div>
+        <div>
+          <a class="fas fa-chevron-down"></a>
+        </div>
+      </div>
+    </button>
+    <div class="dropdown-content">
+    </div>    
+  </div>
+  <div class="category">
+    <button class="dropdown-btn"> 
+      <div class="cloud">
+        <div class="icon-continer">
+          <i class="fas fa-cloud"></i>
+          <p><b>cloud</b></p>
+        </div>
+        <div>
+          <a class="fas fa-chevron-down"></a>
+        </div>
+      </div>
+    </button>
+    <div class="dropdown-content">
+    </div>    
+  </div>
+  
+  
+
+  <!-- <div class="exams  container" id="exams"> 
+  </div> -->
+
+
+  
+</div>
+  
+ 
+    
+    
+  <script src="./homePage.js"></script>
+
   </body>
 </html>
