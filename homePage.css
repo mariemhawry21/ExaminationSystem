@@ -10,9 +10,15 @@
 .pColor {
   color: #9747ff;
 }
-
+body{
+  background-color: #FAFAFC;
+}
+.about-title{
+  color: #eee;
+  line-height: 1.5;
+  margin-top: 20px;
+}
 .main {
-  background-color: rgb(215, 228, 239);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -77,18 +83,15 @@
 }
 
 
-.catagrey{
-  background-color: rgb(215, 228, 239);
-  height: 100vh;
-
-
-
+.icon-card{
+  font-size: 3rem;
 }
-.exams {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 50px;
+.main-title{
+  font-size: 5rem;
+}
+.title{
+  color: #1D4645;
+  font-weight: bold;
 }
 .course-card {
   margin: 20px;
