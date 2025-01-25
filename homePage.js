@@ -48,3 +48,11 @@ function takeExam(courseName) {
   location.href = `./Exam/start.html?course=${encodeURIComponent(courseName)}`;
   //else go to login page
 }
+
+const urlParams = new URLSearchParams(window.location.search);
+
+const logged = urlParams.get("logged");
+if (logged) {
+  document.querySelector(".LogIn").style.display = "none";
+  document.querySelector(".profile").style.display = "flex";
+}
