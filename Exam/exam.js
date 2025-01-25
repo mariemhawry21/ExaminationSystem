@@ -3,7 +3,7 @@ const courseName = urlParams.get("course");
 
 console.log(courseName);
 
-let par = document.querySelector("p");
+let par = document.querySelector("span");
 if (par) {
   par.innerHTML = courseName;
 }
@@ -23,12 +23,23 @@ if (levelBtns) {
     });
   });
 }
+function checkTheChoosedLevel() {
+  if (!choosedlevel) {
+    document.querySelector(".error-select").style.visibility = "visible";
+    return false
+  } else {
+    document.querySelector(".error-select").style.visibility = "hidden";
+    return true
+  }
+}
 
 let startExamBtn = document.querySelector(".startExam");
 if (startExamBtn) {
   startExamBtn.addEventListener("click", (e) => {
-    location.href = `./exam.html?course=${encodeURIComponent(
-      courseName
-    )}&level=${encodeURIComponent(choosedlevel)}`;
+    if (checkTheChoosedLevel()) {
+      location.href = `./exam.html?course=${encodeURIComponent(
+        courseName
+      )}&level=${encodeURIComponent(choosedlevel)}`;
+    }
   });
 }
