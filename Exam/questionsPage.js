@@ -54,12 +54,12 @@ function showQuestions() {
   if (question) {
     const questionCard = `
         <div class="question-card">
-          <p>${question.question}</p>
-          <ul>
+          <h3>${question.question}</h3>
+          <ul class="list-unstyled">
             ${question.options
               .map(
                 (option, idx) =>
-                  `<li>
+                  `<li class="m-2">
                   <input type="radio" name="question" value="${escapeHTML(
                     option
                   )}" id="option${idx}" ${
@@ -70,9 +70,16 @@ function showQuestions() {
               )
               .join("")}
           </ul>
-          <button id="submitBTN" onclick="submitQuiz()">Submit</button>
-          <button id="nextQuestion" onclick="getNextQuestion()">Next</button>
-          <button id="prevQuestion" onclick="getPrevQuestion()">Prev</button>
+          <p class="plese-select-para"></p>
+          <div class="d-flex justify-content-between">
+          <div class="">
+          <button id="submitBTN" style="width:100px" class="bg-success fw-bold text-white text-uppercase border-0 p-2 rounded " onclick="submitQuiz()">Submit</button>
+          <button id="nextQuestion" style="width:100px" class="bg-success fw-bold text-white text-uppercase border-0 p-2 rounded " onclick="getNextQuestion()">Next</button>
+          </div>
+          <div class="">
+          <button id="prevQuestion" style="width:100px" class="bg-danger fw-bold text-white text-uppercase border-0 p-2 rounded " onclick="getPrevQuestion()">Prev</button>
+          </div>
+          </div>
         </div>
       `;
     questionContainer.innerHTML = questionCard;
@@ -102,6 +109,7 @@ function getNextQuestion() {
     return;
   }
   userSelections[cnt] = selectedOption.value;
+  console.log(userSelections);
 
   if (cnt < length - 1) {
     cnt++;
@@ -146,7 +154,7 @@ function showError(message) {
     const errorElement = document.createElement("p");
     errorElement.style.color = "red";
     errorElement.textContent = message;
-    document.querySelector(".qeuestion").appendChild(errorElement);
+    document.querySelector(".plese-select-para").appendChild(errorElement);
   }
 }
 
@@ -199,8 +207,11 @@ function submitQuiz() {
   console.log(userSelections);
   console.log(score);
   if (score >= length / 2) {
-    location.href = `../Success/success.html?score=${score}`;
+    location.href = `../Success/success.html?score=${score}&numberOfQuestions=${length}`;
   } else {
-    location.href = `../Fail/fail.html?score=${score}`;
+    location.href = `../Fail/fail.html?score=${score}&numberOfQuestions=${length}`;
   }
 }
+
+
+

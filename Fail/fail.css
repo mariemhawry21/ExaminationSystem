@@ -1,0 +1,14 @@
+.home-btn {
+  display: block;
+  background-color: blueviolet;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.mainResult{
+    color: #1D4645;
+    font-size: 3rem;
+    margin: 20px 0;
+}

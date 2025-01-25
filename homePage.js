@@ -42,17 +42,22 @@ function showCourses(courses) {
   });
 }
 
-function takeExam(courseName) {
-  console.log(courseName);
-  //check if he logged
-  location.href = `./Exam/start.html?course=${encodeURIComponent(courseName)}`;
-  //else go to login page
-}
-
 const urlParams = new URLSearchParams(window.location.search);
 
 const logged = urlParams.get("logged");
 if (logged) {
   document.querySelector(".LogIn").style.display = "none";
   document.querySelector(".profile").style.display = "flex";
+}
+function takeExam(courseName) {
+  console.log(courseName);
+  //check if he logged
+  if (logged) {
+    location.href = `./Exam/start.html?course=${encodeURIComponent(
+      courseName
+    )}`;
+  } else {
+    location.href = `./Login/login.html`;
+  }
+  //else go to login page
 }

@@ -1,43 +1,24 @@
-.error-message {
-  color: red;
+#examPage{
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+body{
+    height: 100vh;
+   
+    background-image:linear-gradient( blueviolet,white);
 }
 #submitBTN {
   display: none;
   background-color: green;
 }
-.start-controls {
-  margin-top: 20px ;
-}
-.start-controls button {
-  background-color: blueviolet;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  width: 100px;
-}
-.start-controls button.active {
-  background-color: green;
-}
-.startExam {
-  background-color: transparent;
-  border: none;
-  border: 1px solid gray;
-  border-radius: 25px;
-  padding: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: all 1s;
-}
-.startExam:hover {
-  box-shadow: 0 0 10px 10px #eee;
-}
-.error-select {
-  visibility: hidden;
-  color: red;
-  margin: 10px 10px;
-}
-.level-para {
-  color: gray;
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/stars.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+     display: flex;
+    justify-content: center;
+    align-items: center;
 }
