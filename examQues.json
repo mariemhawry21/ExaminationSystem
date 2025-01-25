@@ -1,1065 +1,1477 @@
 {
-    "HTML": {
-      "easy": [
-        {
-          "question": "What does HTML stand for?",
-          "options": [
-            "HyperText Markup Language",
-            "HighText Machine Language",
-            "Hyperlink Text Markup Language",
-            "None of the above"
-          ],
-          "answer": "HyperText Markup Language"
-        },
-        {
-          "question": "Which tag is used to display a hyperlink in HTML?",
-          "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
-          "answer": "<a>"
-        },
-        {
-          "question": "Which HTML tag is used to define an unordered list?",
-          "options": ["<ul>", "<li>", "<ol>", "<list>"],
-          "answer": "<ul>"
-        },
-        {
-          "question": "Which tag is used to define a paragraph in HTML?",
-          "options": ["<p>", "<paragraph>", "<text>", "<br>"],
-          "answer": "<p>"
-        },
-        {
-          "question": "What is the correct HTML element for inserting a line break?",
-          "options": ["<break>", "<br>", "<lb>", "<line>"],
-          "answer": "<br>"
-        },
-        {
-          "question": "Which tag is used to define a table in HTML?",
-          "options": ["<table>", "<tab>", "<tr>", "<td>"],
-          "answer": "<table>"
-        },
-        {
-          "question": "How can you make a list in HTML?",
-          "options": ["<ol>", "<ul>", "<li>", "All of the above"],
-          "answer": "All of the above"
-        },
-        {
-          "question": "What is the correct HTML for creating a checkbox?",
-          "options": [
-            "<checkbox>",
-            "<input type='checkbox'>",
-            "<input type='check'>",
-            "<input type='box'>"
-          ],
-          "answer": "<input type='checkbox'>"
-        },
-        {
-          "question": "Which tag is used to define a division or section in an HTML document?",
-          "options": ["<div>", "<section>", "<span>", "<article>"],
-          "answer": "<div>"
-        },
-        {
-          "question": "Which tag is used to define an input field in HTML?",
-          "options": ["<input>", "<textfield>", "<textbox>", "<form>"],
-          "answer": "<input>"
-        }
-      ],
-      "medium": [
-        {
-          "question": "Which attribute is used to provide an alternative text for an image in HTML?",
-          "options": ["alt", "src", "title", "img"],
-          "answer": "alt"
-        },
-        {
-          "question": "Which tag is used to embed an image in HTML?",
-          "options": ["<image>", "<img>", "<src>", "<picture>"],
-          "answer": "<img>"
-        },
-        {
-          "question": "What does the <a> tag's 'href' attribute do?",
-          "options": [
-            "Defines the destination URL of the link",
-            "Defines the text of the link",
-            "Defines the background of the link",
-            "None of the above"
-          ],
-          "answer": "Defines the destination URL of the link"
-        },
-        {
-          "question": "Which of the following is used to group block elements in HTML?",
-          "options": ["<section>", "<div>", "<header>", "<article>"],
-          "answer": "<div>"
-        },
-        {
-          "question": "Which HTML element is used to create a drop-down list?",
-          "options": ["<dropdown>", "<select>", "<option>", "<list>"],
-          "answer": "<select>"
-        },
-        {
-          "question": "Which tag is used to define a navigation block in HTML?",
-          "options": ["<nav>", "<header>", "<footer>", "<section>"],
-          "answer": "<nav>"
-        },
-        {
-          "question": "Which attribute is used to specify the URL of an external script in HTML?",
-          "options": ["href", "src", "link", "url"],
-          "answer": "src"
-        },
-        {
-          "question": "What is the default value of the 'display' property for block-level elements in CSS?",
-          "options": ["block", "inline", "none", "inline-block"],
-          "answer": "block"
-        },
-        {
-          "question": "Which HTML element defines the header of a document?",
-          "options": ["<head>", "<header>", "<body>", "<footer>"],
-          "answer": "<header>"
-        },
-        {
-          "question": "Which element is used to define a list item in HTML?",
-          "options": ["<li>", "<ul>", "<ol>", "<list>"],
-          "answer": "<li>"
-        }
-      ],
-      "hard": [
-        {
-          "question": "Which HTML element is used to embed a video in a web page?",
-          "options": ["<video>", "<media>", "<embed>", "<source>"],
-          "answer": "<video>"
-        },
-        {
-          "question": "What is the purpose of the 'alt' attribute in the <img> tag?",
-          "options": [
-            "Defines the alternative text for the image",
-            "Defines the URL for the image",
-            "Defines the width of the image",
-            "Defines the title for the image"
-          ],
-          "answer": "Defines the alternative text for the image"
-        },
-        {
-          "question": "What is the function of the <meta> tag in HTML?",
-          "options": [
-            "Defines metadata about the HTML document",
-            "Defines the title of the document",
-            "Defines the main content of the document",
-            "Defines the script file for the document"
-          ],
-          "answer": "Defines metadata about the HTML document"
-        },
-        {
-          "question": "Which HTML element is used for creating tables?",
-          "options": ["<table>", "<td>", "<tr>", "<th>"],
-          "answer": "<table>"
-        },
-        {
-          "question": "What is the correct HTML for creating a text input field?",
-          "options": [
-            "<input type='text'>",
-            "<textfield type='text'>",
-            "<input type='textfield'>",
-            "<input type='textinput'>"
-          ],
-          "answer": "<input type='text'>"
-        },
-        {
-          "question": "Which HTML element defines a paragraph?",
-          "options": ["<p>", "<para>", "<text>", "<body>"],
-          "answer": "<p>"
-        },
-        {
-          "question": "Which HTML element is used to define a heading?",
-          "options": ["<h1> to <h6>", "<header>", "<heading>", "<hgroup>"],
-          "answer": "<h1> to <h6>"
-        },
-        {
-          "question": "Which tag is used to create a comment in HTML?",
-          "options": [
-            "<!-- comment -->",
-            "<comment>",
-            "// comment",
-            "/* comment */"
-          ],
-          "answer": "<!-- comment -->"
-        },
-        {
-          "question": "Which HTML element is used for grouping inline elements?",
-          "options": ["<span>", "<div>", "<a>", "<section>"],
-          "answer": "<span>"
-        },
-        {
-          "question": "Which HTML tag is used to define a footer in a document?",
-          "options": [
-            "<footer>",
-            "<footer-group>",
-            "<bottom>",
-            "<section-footer>"
-          ],
-          "answer": "<footer>"
-        }
-      ]
-    },
-    "CSS": {
-      "easy": [
-        {
-          "question": "Which CSS property is used to change the background color?",
-          "options": [
-            "background-color",
-            "color",
-            "bgcolor",
-            "background-image"
-          ],
-          "answer": "background-color"
-        },
-        {
-          "question": "Which CSS property is used to set the text color?",
-          "options": ["color", "font-color", "text-color", "bgcolor"],
-          "answer": "color"
-        },
-        {
-          "question": "Which property is used to change the font of an element?",
-          "options": ["font-family", "font-size", "text-style", "text-font"],
-          "answer": "font-family"
-        },
-        {
-          "question": "Which property controls the text size in CSS?",
-          "options": ["font-size", "text-size", "size", "text-style"],
-          "answer": "font-size"
-        },
-        {
-          "question": "Which CSS property is used to control the spacing between letters?",
-          "options": [
-            "letter-spacing",
-            "word-spacing",
-            "line-height",
-            "font-spacing"
-          ],
-          "answer": "letter-spacing"
-        },
-        {
-          "question": "Which CSS property is used to control the space between lines of text?",
-          "options": [
-            "line-height",
-            "letter-spacing",
-            "word-spacing",
-            "margin"
-          ],
-          "answer": "line-height"
-        },
-        {
-          "question": "Which CSS property is used to set the width of an element?",
-          "options": ["width", "height", "size", "box-width"],
-          "answer": "width"
-        },
-        {
-          "question": "Which CSS property is used to add space around an element's border?",
-          "options": ["margin", "padding", "border-spacing", "spacing"],
-          "answer": "margin"
-        },
-        {
-          "question": "Which CSS property defines the border style of an element?",
-          "options": ["border-style", "border-width", "border-color", "border"],
-          "answer": "border-style"
-        },
-        {
-          "question": "Which of the following CSS selectors is used to target elements by class?",
-          "options": [".classname", "#classname", "classname", "[classname]"],
-          "answer": ".classname"
-        }
-      ],
-      "medium": [
-        {
-          "question": "How do you center a block element in CSS?",
-          "options": [
-            "margin: auto",
-            "text-align: center",
-            "display: flex",
-            "None of the above"
-          ],
-          "answer": "margin: auto"
-        },
-        {
-          "question": "What property is used to change the spacing between words in CSS?",
-          "options": [
-            "word-spacing",
-            "letter-spacing",
-            "text-indent",
-            "line-height"
-          ],
-          "answer": "word-spacing"
-        },
-        {
-          "question": "Which CSS property is used to create a shadow effect around text?",
-          "options": ["text-shadow", "box-shadow", "shadow", "border-shadow"],
-          "answer": "text-shadow"
-        },
-        {
-          "question": "How do you make a list horizontal in CSS?",
-          "options": [
-            "Set list-style-type to none",
-            "Use float",
-            "Set display: inline",
-            "All of the above"
-          ],
-          "answer": "All of the above"
-        },
-        {
-          "question": "Which CSS property is used to change the font weight?",
-          "options": ["font-weight", "font-size", "font-family", "text-style"],
-          "answer": "font-weight"
-        },
-        {
-          "question": "How do you apply styles to an element with a specific ID in CSS?",
-          "options": ["#id", ".id", "id", "[id]"],
-          "answer": "#id"
-        },
-        {
-          "question": "What does the 'box-sizing' property do?",
-          "options": [
-            "Changes how width and height are calculated",
-            "Changes the padding of an element",
-            "Changes the margin of an element",
-            "None of the above"
-          ],
-          "answer": "Changes how width and height are calculated"
-        },
-        {
-          "question": "Which CSS property controls the layout of elements in a flex container?",
-          "options": ["flex-direction", "display", "flex-wrap", "align-items"],
-          "answer": "flex-direction"
-        },
-        {
-          "question": "Which value of the 'display' property is used for flexbox layout?",
-          "options": ["flex", "block", "inline", "inline-block"],
-          "answer": "flex"
-        },
-        {
-          "question": "How do you create a responsive layout with CSS?",
-          "options": [
-            "Media queries",
-            "Flexible box",
-            "Grid layout",
-            "All of the above"
-          ],
-          "answer": "All of the above"
-        }
-      ],
-      "hard": [
-        {
-          "question": "Which CSS property allows you to specify the order of flex items in a flex container?",
-          "options": ["order", "flex-order", "flex-direction", "align-items"],
-          "answer": "order"
-        },
-        {
-          "question": "What is the default value of the 'position' property in CSS?",
-          "options": ["static", "relative", "absolute", "fixed"],
-          "answer": "static"
-        },
-        {
-          "question": "What is the 'z-index' property used for in CSS?",
-          "options": [
-            "Control stacking order of elements",
-            "Control transparency",
-            "Control background color",
-            "Control font size"
-          ],
-          "answer": "Control stacking order of elements"
-        },
-        {
-          "question": "Which value of the 'position' property is used to make an element fixed to the screen?",
-          "options": ["fixed", "relative", "absolute", "sticky"],
-          "answer": "fixed"
-        },
-        {
-          "question": "What is the purpose of the 'float' property in CSS?",
-          "options": [
-            "To push content left or right",
-            "To center an element",
-            "To define a grid layout",
-            "To set the background color"
-          ],
-          "answer": "To push content left or right"
-        },
-        {
-          "question": "What does the 'clear' property do in CSS?",
-          "options": [
-            "Stops floating elements from wrapping around",
-            "Clears all text",
-            "Removes background images",
-            "Clears the layout"
-          ],
-          "answer": "Stops floating elements from wrapping around"
-        },
-        {
-          "question": "What is the function of the 'opacity' property in CSS?",
-          "options": [
-            "Defines the transparency level",
-            "Defines the position",
-            "Defines the layout",
-            "Defines the margin"
-          ],
-          "answer": "Defines the transparency level"
-        },
-        {
-          "question": "Which CSS property is used to set the space between columns in a grid layout?",
-          "options": ["column-gap", "grid-gap", "gap", "column-spacing"],
-          "answer": "column-gap"
-        },
-        {
-          "question": "Which property in CSS allows you to control the gap between grid items?",
-          "options": ["gap", "space", "grid-gap", "column-gap"],
-          "answer": "gap"
-        },
-        {
-          "question": "What is the purpose of the 'transform' property in CSS?",
-          "options": [
-            "To apply 2D or 3D transformations",
-            "To change the layout",
-            "To add a shadow",
-            "To move an element to the background"
-          ],
-          "answer": "To apply 2D or 3D transformations"
-        }
-      ]
-    },
-    "JavaScript": {
-      "easy": [
-        {
-          "question": "What is the output of 'console.log(2 + 2)' in JavaScript?",
-          "options": ["4", "22", "undefined", "Error"],
-          "answer": "4"
-        },
-        {
-          "question": "Which of the following is the correct syntax for a function in JavaScript?",
-          "options": [
-            "function myFunction() {}",
-            "function: myFunction {}",
-            "myFunction() => {}",
-            "function => myFunction {}"
-          ],
-          "answer": "function myFunction() {}"
-        },
-        {
-          "question": "Which keyword is used to declare a variable in JavaScript?",
-          "options": ["let", "var", "const", "All of the above"],
-          "answer": "All of the above"
-        },
-        {
-          "question": "Which operator is used to compare both value and type in JavaScript?",
-          "options": ["==", "===", "=", "!="],
-          "answer": "==="
-        },
-        {
-          "question": "What is the default return value of a function in JavaScript?",
-          "options": ["undefined", "null", "0", "false"],
-          "answer": "undefined"
-        },
-        {
-          "question": "Which method is used to add an element to the end of an array in JavaScript?",
-          "options": ["push()", "pop()", "shift()", "unshift()"],
-          "answer": "push()"
-        },
-        {
-          "question": "What will 'typeof NaN' return in JavaScript?",
-          "options": ["'number'", "'undefined'", "'NaN'", "'object'"],
-          "answer": "'number'"
-        },
-        {
-          "question": "What is the result of '5 == '5'' in JavaScript?",
-          "options": ["true", "false", "undefined", "Error"],
-          "answer": "true"
-        },
-        {
-          "question": "Which method is used to remove the last element from an array in JavaScript?",
-          "options": ["pop()", "push()", "shift()", "unshift()"],
-          "answer": "pop()"
-        },
-        {
-          "question": "What is the scope of a variable declared with 'var' in JavaScript?",
-          "options": [
-            "Function scope",
-            "Block scope",
-            "Global scope",
-            "None of the above"
-          ],
-          "answer": "Function scope"
-        }
-      ],
-      "medium": [
-        {
-          "question": "How do you declare a constant in JavaScript?",
-          "options": ["const", "constant", "var", "let"],
-          "answer": "const"
-        },
-        {
-          "question": "Which of the following is not a valid JavaScript data type?",
-          "options": ["String", "Number", "Boolean", "Text"],
-          "answer": "Text"
-        },
-        {
-          "question": "Which method is used to convert a string to an integer in JavaScript?",
-          "options": ["parseInt()", "parseFloat()", "Number()", "convert()"],
-          "answer": "parseInt()"
-        },
-        {
-          "question": "What is the output of 'console.log(3 + '5')' in JavaScript?",
-          "options": ["35", "8", "undefined", "Error"],
-          "answer": "35"
-        },
-        {
-          "question": "What is the purpose of the 'return' statement in JavaScript?",
-          "options": [
-            "To exit the function",
-            "To return a value from a function",
-            "Both of the above",
-            "None of the above"
-          ],
-          "answer": "Both of the above"
-        },
-        {
-          "question": "Which method is used to remove the first element from an array in JavaScript?",
-          "options": ["shift()", "pop()", "push()", "unshift()"],
-          "answer": "shift()"
-        },
-        {
-          "question": "How do you create a new array in JavaScript?",
-          "options": ["[]", "new Array()", "array()", "All of the above"],
-          "answer": "All of the above"
-        },
-        {
-          "question": "Which of the following is not a comparison operator in JavaScript?",
-          "options": ["==", "!==", ">", "<<"],
-          "answer": "<<"
-        },
-        {
-          "question": "What does 'this' refer to in JavaScript?",
-          "options": [
-            "The current object",
-            "The global object",
-            "The function itself",
-            "None of the above"
-          ],
-          "answer": "The current object"
-        },
-        {
-          "question": "What does the 'Array.isArray()' method do in JavaScript?",
-          "options": [
-            "Checks if a value is an array",
-            "Converts a value to an array",
-            "Adds elements to an array",
-            "Removes elements from an array"
-          ],
-          "answer": "Checks if a value is an array"
-        }
-      ],
-      "hard": [
-        {
-          "question": "What is the purpose of 'async' and 'await' in JavaScript?",
-          "options": [
-            "To handle asynchronous operations",
-            "To pause a function",
-            "To handle errors",
-            "All of the above"
-          ],
-          "answer": "All of the above"
-        },
-        {
-          "question": "What will be the output of 'console.log([] == ![])' in JavaScript?",
-          "options": ["true", "false", "undefined", "NaN"],
-          "answer": "true"
-        },
-        {
-          "question": "What is a closure in JavaScript?",
-          "options": [
-            "A function with access to its own scope, the outer function’s scope, and the global scope",
-            "A function that runs only once",
-            "A block of code that can be executed",
-            "None of the above"
-          ],
-          "answer": "A function with access to its own scope, the outer function’s scope, and the global scope"
-        },
-        {
-          "question": "What does the 'bind()' method do in JavaScript?",
-          "options": [
-            "Creates a new function with a specified context",
-            "Creates a new array",
-            "Binds a variable to a function",
-            "None of the above"
-          ],
-          "answer": "Creates a new function with a specified context"
-        },
-        {
-          "question": "Which of the following is true about JavaScript promises?",
-          "options": [
-            "They are used for asynchronous operations",
-            "They can be resolved or rejected",
-            "They can be chained",
-            "All of the above"
-          ],
-          "answer": "All of the above"
-        },
-        {
-          "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
-          "options": [
-            "'null' is an object, 'undefined' is a type",
-            "'null' is undefined",
-            "'null' is a string",
-            "'undefined' is null"
-          ],
-          "answer": "'null' is an object, 'undefined' is a type"
-        },
-        {
-          "question": "Which method is used to create an empty object in JavaScript?",
-          "options": [
-            "{}",
-            "new Object()",
-            "Object.create()",
-            "All of the above"
-          ],
-          "answer": "All of the above"
-        },
-        {
-          "question": "What does 'Object.freeze()' do in JavaScript?",
-          "options": [
-            "Prevents modification of an object",
-            "Deletes an object",
-            "Makes an object immutable",
-            "Both of the above"
-          ],
-          "answer": "Both of the above"
-        },
-        {
-          "question": "Which JavaScript method can be used to combine two arrays?",
-          "options": ["concat()", "push()", "join()", "merge()"],
-          "answer": "concat()"
-        },
-        {
-          "question": "What is the purpose of 'call()' in JavaScript?",
-          "options": [
-            "It calls a function with a specific 'this' value",
-            "It creates a new object",
-            "It adds elements to an array",
-            "None of the above"
-          ],
-          "answer": "It calls a function with a specific 'this' value"
-        }
-      ]
-    },
-    "Angular": {
-      "easy": [
-        {
-          "question": "Which of the following is used to define a component in Angular?",
-          "options": ["@Component", "@Directive", "@Injectable", "@NgModule"],
-          "answer": "@Component"
-        },
-        {
-          "question": "What is the default change detection strategy in Angular?",
-          "options": [
-            "OnPush",
-            "Default",
-            "ChangeDetectionStrategy",
-            "ChangeDetection"
-          ],
-          "answer": "Default"
-        },
-        {
-          "question": "Which Angular directive is used for iterating over a list of items?",
-          "options": ["*ngFor", "*ngIf", "*ngModel", "*ngSwitch"],
-          "answer": "*ngFor"
-        },
-        {
-          "question": "Which of the following is used to create a service in Angular?",
-          "options": [
-            "ng generate service",
-            "ng generate component",
-            "ng generate module",
-            "ng create service"
-          ],
-          "answer": "ng generate service"
-        },
-        {
-          "question": "What is the main purpose of Angular modules (@NgModule)?",
-          "options": [
-            "Organizing components, directives, pipes, and services",
-            "Handling routing",
-            "Managing forms",
-            "Testing Angular components"
-          ],
-          "answer": "Organizing components, directives, pipes, and services"
-        }
-      ],
-      "medium": [
-        {
-          "question": "Which lifecycle hook is called after Angular has initialized the input properties of a component?",
-          "options": [
-            "ngOnInit()",
-            "ngOnChanges()",
-            "ngDoCheck()",
-            "ngAfterViewInit()"
-          ],
-          "answer": "ngOnInit()"
-        },
-        {
-          "question": "What does the Angular CLI command ng serve do?",
-          "options": [
-            "It builds the application",
-            "It starts a development server",
-            "It runs unit tests",
-            "It generates components"
-          ],
-          "answer": "It starts a development server"
-        },
-        {
-          "question": "How would you declare a route in Angular?",
-          "options": [
-            "const routes = [{ path: 'home', component: HomeComponent }]",
-            "const routes = [{ url: 'home', component: HomeComponent }]",
-            "const routes = [{ path: 'home', module: HomeModule }]",
-            "const routes = [{ link: 'home', component: HomeComponent }]"
-          ],
-          "answer": "const routes = [{ path: 'home', component: HomeComponent }]"
-        },
-        {
-          "question": "Which operator is used to subscribe to an observable in Angular?",
-          "options": ["subscribe()", "next()", "complete()", "catch()"],
-          "answer": "subscribe()"
-        },
-        {
-          "question": "What is the purpose of the HttpClient module in Angular?",
-          "options": [
-            "To handle HTTP requests",
-            "To manage components",
-            "To perform routing",
-            "To generate services"
-          ],
-          "answer": "To handle HTTP requests"
-        }
-      ],
-      "hard": [
-        {
-          "question": "What is the purpose of 'ngOnChanges' in Angular?",
-          "options": [
-            "It is called when any of the input properties change",
-            "It is called when a component’s view is initialized",
-            "It is used to detect changes in service data",
-            "It is used to handle lifecycle changes of directives"
-          ],
-          "answer": "It is called when any of the input properties change"
-        },
-        {
-          "question": "Which Angular decorator is used to define an injectable service?",
-          "options": ["@Injectable", "@Service", "@Provider", "@Directive"],
-          "answer": "@Injectable"
-        },
-        {
-          "question": "What does the 'ngOnInit' lifecycle hook do?",
-          "options": [
-            "It initializes the component",
-            "It runs after Angular initializes the input properties of the component",
-            "It is called every time the component's view changes",
-            "It runs after the component is destroyed"
-          ],
-          "answer": "It runs after Angular initializes the input properties of the component"
-        },
-        {
-          "question": "How can you use a guard to prevent navigation in Angular?",
-          "options": [
-            "Using CanActivate",
-            "Using CanLoad",
-            "Using CanDeactivate",
-            "All of the above"
-          ],
-          "answer": "All of the above"
-        },
-        {
-          "question": "What is the role of a Subject in Angular?",
-          "options": [
-            "It is a type of observable that can multicast to many observers",
-            "It is a one-time observable",
-            "It is used to manage component lifecycle events",
-            "It is used to create new components"
-          ],
-          "answer": "It is a type of observable that can multicast to many observers"
-        }
-      ]
-    },
-    "Node.js": {
-      "easy": [
-        {
-          "question": "What is Node.js?",
-          "options": [
-            "A JavaScript runtime",
-            "A JavaScript library",
-            "A database",
-            "A framework"
-          ],
-          "answer": "A JavaScript runtime"
-        },
-        {
-          "question": "Which module is used to create an HTTP server in Node.js?",
-          "options": ["http", "fs", "url", "path"],
-          "answer": "http"
-        },
-        {
-          "question": "Which command is used to initialize a new Node.js project?",
-          "options": ["npm init", "node init", "npm start", "node start"],
-          "answer": "npm init"
-        },
-        {
-          "question": "Which of the following is used to install packages in Node.js?",
-          "options": ["npm", "node", "js", "server"],
-          "answer": "npm"
-        },
-        {
-          "question": "Which of the following is a core module in Node.js?",
-          "options": ["fs", "express", "mongodb", "react"],
-          "answer": "fs"
-        }
-      ],
-      "medium": [
-        {
-          "question": "What is the purpose of the 'require()' function in Node.js?",
-          "options": [
-            "To import modules",
-            "To define functions",
-            "To create a server",
-            "To handle HTTP requests"
-          ],
-          "answer": "To import modules"
-        },
-        {
-          "question": "How can you handle errors in Node.js?",
-          "options": [
-            "Try-catch block",
-            "Error handler middleware",
-            "Both of the above",
-            "None of the above"
-          ],
-          "answer": "Both of the above"
-        },
-        {
-          "question": "Which method is used to read a file asynchronously in Node.js?",
-          "options": [
-            "fs.readFile()",
-            "fs.writeFile()",
-            "fs.appendFile()",
-            "fs.rename()"
-          ],
-          "answer": "fs.readFile()"
-        },
-        {
-          "question": "Which of the following is the default port for a Node.js HTTP server?",
-          "options": ["3000", "8080", "4000", "5000"],
-          "answer": "3000"
-        },
-        {
-          "question": "Which package manager does Node.js use?",
-          "options": ["npm", "yarn", "bower", "pnpm"],
-          "answer": "npm"
-        }
-      ],
-      "hard": [
-        {
-          "question": "What is the purpose of the 'EventEmitter' class in Node.js?",
-          "options": [
-            "To handle asynchronous events",
-            "To manage database connections",
-            "To create HTTP requests",
-            "To schedule tasks"
-          ],
-          "answer": "To handle asynchronous events"
-        },
-        {
-          "question": "Which module can be used to manage streams in Node.js?",
-          "options": ["stream", "fs", "url", "path"],
-          "answer": "stream"
-        },
-        {
-          "question": "How do you handle synchronous errors in Node.js?",
-          "options": [
-            "Using try-catch blocks",
-            "Using promises",
-            "Using setTimeout",
-            "Using callback functions"
-          ],
-          "answer": "Using try-catch blocks"
-        },
-        {
-          "question": "What is the 'Cluster' module in Node.js used for?",
-          "options": [
-            "To handle multi-core systems",
-            "To create databases",
-            "To manage HTTP requests",
-            "To process files asynchronously"
-          ],
-          "answer": "To handle multi-core systems"
-        },
-        {
-          "question": "What is the difference between 'require()' and 'import' in Node.js?",
-          "options": [
-            "'require()' is synchronous, 'import' is asynchronous",
-            "'import' is synchronous, 'require()' is asynchronous",
-            "'require()' and 'import' are the same",
-            "'require()' is used for modules, 'import' is for files"
-          ],
-          "answer": "'require()' is synchronous, 'import' is asynchronous"
-        }
-      ]
-    },
-    "React": {
-      "easy": [
-        {
-          "question": "What is React?",
-          "options": [
-            "A JavaScript library",
-            "A framework",
-            "A database",
-            "A programming language"
-          ],
-          "answer": "A JavaScript library"
-        },
-        {
-          "question": "Which method is used to update the state in React?",
-          "options": [
-            "setState()",
-            "updateState()",
-            "changeState()",
-            "modifyState()"
-          ],
-          "answer": "setState()"
-        },
-        {
-          "question": "What is JSX?",
-          "options": [
-            "JavaScript XML",
-            "JavaScript Extension",
-            "JavaScript XML Style",
-            "None of the above"
-          ],
-          "answer": "JavaScript XML"
-        },
-        {
-          "question": "Which React component lifecycle method is called after a component is rendered for the first time?",
-          "options": [
-            "componentDidMount()",
-            "componentWillMount()",
-            "shouldComponentUpdate()",
-            "render()"
-          ],
-          "answer": "componentDidMount()"
-        },
-        {
-          "question": "Which of the following is used to create a React component?",
-          "options": [
-            "class Component extends React.Component",
-            "function Component()",
-            "React.createComponent()",
-            "React.createElement()"
-          ],
-          "answer": "class Component extends React.Component"
-        }
-      ],
-      "medium": [
-        {
-          "question": "What is the purpose of props in React?",
-          "options": [
-            "To pass data to components",
-            "To handle component state",
-            "To manage user events",
-            "To update the UI"
-          ],
-          "answer": "To pass data to components"
-        },
-        {
-          "question": "Which of the following is a React hook for managing state?",
-          "options": [
-            "useState",
-            "useEffect",
-            "useReducer",
-            "All of the above"
-          ],
-          "answer": "useState"
-        },
-        {
-          "question": "What is the purpose of React's 'key' prop?",
-          "options": [
-            "To uniquely identify elements in a list",
-            "To specify styles",
-            "To manage component state",
-            "To bind event handlers"
-          ],
-          "answer": "To uniquely identify elements in a list"
-        },
-        {
-          "question": "What is the Virtual DOM in React?",
-          "options": [
-            "A lightweight copy of the actual DOM",
-            "A real-time representation of the DOM",
-            "A database for component data",
-            "An external library used for rendering"
-          ],
-          "answer": "A lightweight copy of the actual DOM"
-        },
-        {
-          "question": "Which of the following is a lifecycle method in React functional components?",
-          "options": [
-            "useEffect",
-            "componentDidMount",
-            "componentWillUnmount",
-            "render"
-          ],
-          "answer": "useEffect"
-        }
-      ],
-      "hard": [
-        {
-          "question": "What is the purpose of 'React.memo'?",
-          "options": [
-            "To prevent unnecessary re-rendering of functional components",
-            "To manage the state of a component",
-            "To handle the lifecycle of a component",
-            "To trigger component updates manually"
-          ],
-          "answer": "To prevent unnecessary re-rendering of functional components"
-        },
-        {
-          "question": "What does 'React.Fragment' do?",
-          "options": [
-            "It allows grouping multiple elements without adding extra nodes to the DOM",
-            "It manages component state",
-            "It creates new components",
-            "It renders elements to the server"
-          ],
-          "answer": "It allows grouping multiple elements without adding extra nodes to the DOM"
-        },
-        {
-          "question": "How can you prevent re-rendering of a component when its props do not change?",
-          "options": [
-            "By using React.memo()",
-            "By using shouldComponentUpdate()",
-            "By using PureComponent",
-            "All of the above"
-          ],
-          "answer": "All of the above"
-        },
-        {
-          "question": "What is the 'useReducer' hook used for in React?",
-          "options": [
-            "For managing complex state logic",
-            "For managing component lifecycle",
-            "For managing event listeners",
-            "For performing side effects"
-          ],
-          "answer": "For managing complex state logic"
-        },
-        {
-          "question": "What is 'context' in React?",
-          "options": [
-            "A way to pass data through the component tree without having to pass props down manually",
-            "A lifecycle method",
-            "A way to trigger rerendering",
-            "A form of event handling"
-          ],
-          "answer": "A way to pass data through the component tree without having to pass props down manually"
-        }
-      ]
-    }
+  "HTML": {
+    "category": "Front-End",
+    "image": "./assets/html5.png",
+    "easy": [
+      {
+        "question": "What does HTML stand for?",
+        "options": [
+          "HyperText Markup Language",
+          "HighText Machine Language",
+          "Hyperlink Text Markup Language",
+          "None of the above"
+        ],
+        "answer": "HyperText Markup Language"
+      },
+      {
+        "question": "Which tag is used to display a hyperlink in HTML?",
+        "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
+        "answer": "<a>"
+      },
+      {
+        "question": "Which HTML tag is used to define an unordered list?",
+        "options": ["<ul>", "<li>", "<ol>", "<list>"],
+        "answer": "<ul>"
+      },
+      {
+        "question": "Which tag is used to define a paragraph in HTML?",
+        "options": ["<p>", "<paragraph>", "<text>", "<br>"],
+        "answer": "<p>"
+      },
+      {
+        "question": "What is the correct HTML element for inserting a line break?",
+        "options": ["<break>", "<br>", "<lb>", "<line>"],
+        "answer": "<br>"
+      },
+      {
+        "question": "Which tag is used to define a table in HTML?",
+        "options": ["<table>", "<tab>", "<tr>", "<td>"],
+        "answer": "<table>"
+      },
+      {
+        "question": "How can you make a list in HTML?",
+        "options": ["<ol>", "<ul>", "<li>", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the correct HTML for creating a checkbox?",
+        "options": [
+          "<checkbox>",
+          "<input type='checkbox'>",
+          "<input type='check'>",
+          "<input type='box'>"
+        ],
+        "answer": "<input type='checkbox'>"
+      },
+      {
+        "question": "Which tag is used to define a division or section in an HTML document?",
+        "options": ["<div>", "<section>", "<span>", "<article>"],
+        "answer": "<div>"
+      },
+      {
+        "question": "Which tag is used to define an input field in HTML?",
+        "options": ["<input>", "<textfield>", "<textbox>", "<form>"],
+        "answer": "<input>"
+      }
+    ],
+    "medium": [
+      {
+        "question": "Which attribute is used to provide an alternative text for an image in HTML?",
+        "options": ["alt", "src", "title", "img"],
+        "answer": "alt"
+      },
+      {
+        "question": "Which tag is used to embed an image in HTML?",
+        "options": ["<image>", "<img>", "<src>", "<picture>"],
+        "answer": "<img>"
+      },
+      {
+        "question": "What does the <a> tag's 'href' attribute do?",
+        "options": [
+          "Defines the destination URL of the link",
+          "Defines the text of the link",
+          "Defines the background of the link",
+          "None of the above"
+        ],
+        "answer": "Defines the destination URL of the link"
+      },
+      {
+        "question": "Which of the following is used to group block elements in HTML?",
+        "options": ["<section>", "<div>", "<header>", "<article>"],
+        "answer": "<div>"
+      },
+      {
+        "question": "Which HTML element is used to create a drop-down list?",
+        "options": ["<dropdown>", "<select>", "<option>", "<list>"],
+        "answer": "<select>"
+      },
+      {
+        "question": "Which tag is used to define a navigation block in HTML?",
+        "options": ["<nav>", "<header>", "<footer>", "<section>"],
+        "answer": "<nav>"
+      },
+      {
+        "question": "Which attribute is used to specify the URL of an external script in HTML?",
+        "options": ["href", "src", "link", "url"],
+        "answer": "src"
+      },
+      {
+        "question": "What is the default value of the 'display' property for block-level elements in CSS?",
+        "options": ["block", "inline", "none", "inline-block"],
+        "answer": "block"
+      },
+      {
+        "question": "Which HTML element defines the header of a document?",
+        "options": ["<head>", "<header>", "<body>", "<footer>"],
+        "answer": "<header>"
+      },
+      {
+        "question": "Which element is used to define a list item in HTML?",
+        "options": ["<li>", "<ul>", "<ol>", "<list>"],
+        "answer": "<li>"
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which HTML element is used to embed a video in a web page?",
+        "options": ["<video>", "<media>", "<embed>", "<source>"],
+        "answer": "<video>"
+      },
+      {
+        "question": "What is the purpose of the 'alt' attribute in the <img> tag?",
+        "options": [
+          "Defines the alternative text for the image",
+          "Defines the URL for the image",
+          "Defines the width of the image",
+          "Defines the title for the image"
+        ],
+        "answer": "Defines the alternative text for the image"
+      },
+      {
+        "question": "What is the function of the <meta> tag in HTML?",
+        "options": [
+          "Defines metadata about the HTML document",
+          "Defines the title of the document",
+          "Defines the main content of the document",
+          "Defines the script file for the document"
+        ],
+        "answer": "Defines metadata about the HTML document"
+      },
+      {
+        "question": "Which HTML element is used for creating tables?",
+        "options": ["<table>", "<td>", "<tr>", "<th>"],
+        "answer": "<table>"
+      },
+      {
+        "question": "What is the correct HTML for creating a text input field?",
+        "options": [
+          "<input type='text'>",
+          "<textfield type='text'>",
+          "<input type='textfield'>",
+          "<input type='textinput'>"
+        ],
+        "answer": "<input type='text'>"
+      },
+      {
+        "question": "Which HTML element defines a paragraph?",
+        "options": ["<p>", "<para>", "<text>", "<body>"],
+        "answer": "<p>"
+      },
+      {
+        "question": "Which HTML element is used to define a heading?",
+        "options": ["<h1> to <h6>", "<header>", "<heading>", "<hgroup>"],
+        "answer": "<h1> to <h6>"
+      },
+      {
+        "question": "Which tag is used to create a comment in HTML?",
+        "options": [
+          "<!-- comment -->",
+          "<comment>",
+          "// comment",
+          "/* comment */"
+        ],
+        "answer": "<!-- comment -->"
+      },
+      {
+        "question": "Which HTML element is used for grouping inline elements?",
+        "options": ["<span>", "<div>", "<a>", "<section>"],
+        "answer": "<span>"
+      },
+      {
+        "question": "Which HTML tag is used to define a footer in a document?",
+        "options": [
+          "<footer>",
+          "<footer-group>",
+          "<bottom>",
+          "<section-footer>"
+        ],
+        "answer": "<footer>"
+      }
+    ]
+  },
+  "CSS": {
+    "category": "Front-End",
+    "image": "./assets/css.png",
+    "easy": [
+      {
+        "question": "Which CSS property is used to change the background color?",
+        "options": ["background-color", "color", "bgcolor", "background-image"],
+        "answer": "background-color"
+      },
+      {
+        "question": "Which CSS property is used to set the text color?",
+        "options": ["color", "font-color", "text-color", "bgcolor"],
+        "answer": "color"
+      },
+      {
+        "question": "Which property is used to change the font of an element?",
+        "options": ["font-family", "font-size", "text-style", "text-font"],
+        "answer": "font-family"
+      },
+      {
+        "question": "Which property controls the text size in CSS?",
+        "options": ["font-size", "text-size", "size", "text-style"],
+        "answer": "font-size"
+      },
+      {
+        "question": "Which CSS property is used to control the spacing between letters?",
+        "options": [
+          "letter-spacing",
+          "word-spacing",
+          "line-height",
+          "font-spacing"
+        ],
+        "answer": "letter-spacing"
+      },
+      {
+        "question": "Which CSS property is used to control the space between lines of text?",
+        "options": ["line-height", "letter-spacing", "word-spacing", "margin"],
+        "answer": "line-height"
+      },
+      {
+        "question": "Which CSS property is used to set the width of an element?",
+        "options": ["width", "height", "size", "box-width"],
+        "answer": "width"
+      },
+      {
+        "question": "Which CSS property is used to add space around an element's border?",
+        "options": ["margin", "padding", "border-spacing", "spacing"],
+        "answer": "margin"
+      },
+      {
+        "question": "Which CSS property defines the border style of an element?",
+        "options": ["border-style", "border-width", "border-color", "border"],
+        "answer": "border-style"
+      },
+      {
+        "question": "Which of the following CSS selectors is used to target elements by class?",
+        "options": [".classname", "#classname", "classname", "[classname]"],
+        "answer": ".classname"
+      }
+    ],
+    "medium": [
+      {
+        "question": "How do you center a block element in CSS?",
+        "options": [
+          "margin: auto",
+          "text-align: center",
+          "display: flex",
+          "None of the above"
+        ],
+        "answer": "margin: auto"
+      },
+      {
+        "question": "What property is used to change the spacing between words in CSS?",
+        "options": [
+          "word-spacing",
+          "letter-spacing",
+          "text-indent",
+          "line-height"
+        ],
+        "answer": "word-spacing"
+      },
+      {
+        "question": "Which CSS property is used to create a shadow effect around text?",
+        "options": ["text-shadow", "box-shadow", "shadow", "border-shadow"],
+        "answer": "text-shadow"
+      },
+      {
+        "question": "How do you make a list horizontal in CSS?",
+        "options": [
+          "Set list-style-type to none",
+          "Use float",
+          "Set display: inline",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "question": "Which CSS property is used to change the font weight?",
+        "options": ["font-weight", "font-size", "font-family", "text-style"],
+        "answer": "font-weight"
+      },
+      {
+        "question": "How do you apply styles to an element with a specific ID in CSS?",
+        "options": ["#id", ".id", "id", "[id]"],
+        "answer": "#id"
+      },
+      {
+        "question": "What does the 'box-sizing' property do?",
+        "options": [
+          "Changes how width and height are calculated",
+          "Changes the padding of an element",
+          "Changes the margin of an element",
+          "None of the above"
+        ],
+        "answer": "Changes how width and height are calculated"
+      },
+      {
+        "question": "Which CSS property controls the layout of elements in a flex container?",
+        "options": ["flex-direction", "display", "flex-wrap", "align-items"],
+        "answer": "flex-direction"
+      },
+      {
+        "question": "Which value of the 'display' property is used for flexbox layout?",
+        "options": ["flex", "block", "inline", "inline-block"],
+        "answer": "flex"
+      },
+      {
+        "question": "How do you create a responsive layout with CSS?",
+        "options": [
+          "Media queries",
+          "Flexible box",
+          "Grid layout",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which CSS property allows you to specify the order of flex items in a flex container?",
+        "options": ["order", "flex-order", "flex-direction", "align-items"],
+        "answer": "order"
+      },
+      {
+        "question": "What is the default value of the 'position' property in CSS?",
+        "options": ["static", "relative", "absolute", "fixed"],
+        "answer": "static"
+      },
+      {
+        "question": "What is the 'z-index' property used for in CSS?",
+        "options": [
+          "Control stacking order of elements",
+          "Control transparency",
+          "Control background color",
+          "Control font size"
+        ],
+        "answer": "Control stacking order of elements"
+      },
+      {
+        "question": "Which value of the 'position' property is used to make an element fixed to the screen?",
+        "options": ["fixed", "relative", "absolute", "sticky"],
+        "answer": "fixed"
+      },
+      {
+        "question": "What is the purpose of the 'float' property in CSS?",
+        "options": [
+          "To push content left or right",
+          "To center an element",
+          "To define a grid layout",
+          "To set the background color"
+        ],
+        "answer": "To push content left or right"
+      },
+      {
+        "question": "What does the 'clear' property do in CSS?",
+        "options": [
+          "Stops floating elements from wrapping around",
+          "Clears all text",
+          "Removes background images",
+          "Clears the layout"
+        ],
+        "answer": "Stops floating elements from wrapping around"
+      },
+      {
+        "question": "What is the function of the 'opacity' property in CSS?",
+        "options": [
+          "Defines the transparency level",
+          "Defines the position",
+          "Defines the layout",
+          "Defines the margin"
+        ],
+        "answer": "Defines the transparency level"
+      },
+      {
+        "question": "Which CSS property is used to set the space between columns in a grid layout?",
+        "options": ["column-gap", "grid-gap", "gap", "column-spacing"],
+        "answer": "column-gap"
+      },
+      {
+        "question": "Which property in CSS allows you to control the gap between grid items?",
+        "options": ["gap", "space", "grid-gap", "column-gap"],
+        "answer": "gap"
+      },
+      {
+        "question": "What is the purpose of the 'transform' property in CSS?",
+        "options": [
+          "To apply 2D or 3D transformations",
+          "To change the layout",
+          "To add a shadow",
+          "To move an element to the background"
+        ],
+        "answer": "To apply 2D or 3D transformations"
+      }
+    ]
+  },
+  "JavaScript": {
+    "category": "Front-End",
+    "image": "./assets/js.png",
+    "easy": [
+      {
+        "question": "What is the output of 'console.log(2 + 2)' in JavaScript?",
+        "options": ["4", "22", "undefined", "Error"],
+        "answer": "4"
+      },
+      {
+        "question": "Which of the following is the correct syntax for a function in JavaScript?",
+        "options": [
+          "function myFunction() {}",
+          "function: myFunction {}",
+          "myFunction() => {}",
+          "function => myFunction {}"
+        ],
+        "answer": "function myFunction() {}"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "options": ["let", "var", "const", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "Which operator is used to compare both value and type in JavaScript?",
+        "options": ["==", "===", "=", "!="],
+        "answer": "==="
+      },
+      {
+        "question": "What is the default return value of a function in JavaScript?",
+        "options": ["undefined", "null", "0", "false"],
+        "answer": "undefined"
+      },
+      {
+        "question": "Which method is used to add an element to the end of an array in JavaScript?",
+        "options": ["push()", "pop()", "shift()", "unshift()"],
+        "answer": "push()"
+      },
+      {
+        "question": "What will 'typeof NaN' return in JavaScript?",
+        "options": ["'number'", "'undefined'", "'NaN'", "'object'"],
+        "answer": "'number'"
+      },
+      {
+        "question": "What is the result of '5 == '5'' in JavaScript?",
+        "options": ["true", "false", "undefined", "Error"],
+        "answer": "true"
+      },
+      {
+        "question": "Which method is used to remove the last element from an array in JavaScript?",
+        "options": ["pop()", "push()", "shift()", "unshift()"],
+        "answer": "pop()"
+      },
+      {
+        "question": "What is the scope of a variable declared with 'var' in JavaScript?",
+        "options": [
+          "Function scope",
+          "Block scope",
+          "Global scope",
+          "None of the above"
+        ],
+        "answer": "Function scope"
+      }
+    ],
+    "medium": [
+      {
+        "question": "How do you declare a constant in JavaScript?",
+        "options": ["const", "constant", "var", "let"],
+        "answer": "const"
+      },
+      {
+        "question": "Which of the following is not a valid JavaScript data type?",
+        "options": ["String", "Number", "Boolean", "Text"],
+        "answer": "Text"
+      },
+      {
+        "question": "Which method is used to convert a string to an integer in JavaScript?",
+        "options": ["parseInt()", "parseFloat()", "Number()", "convert()"],
+        "answer": "parseInt()"
+      },
+      {
+        "question": "What is the output of 'console.log(3 + '5')' in JavaScript?",
+        "options": ["35", "8", "undefined", "Error"],
+        "answer": "35"
+      },
+      {
+        "question": "What is the purpose of the 'return' statement in JavaScript?",
+        "options": [
+          "To exit the function",
+          "To return a value from a function",
+          "Both of the above",
+          "None of the above"
+        ],
+        "answer": "Both of the above"
+      },
+      {
+        "question": "Which method is used to remove the first element from an array in JavaScript?",
+        "options": ["shift()", "pop()", "push()", "unshift()"],
+        "answer": "shift()"
+      },
+      {
+        "question": "How do you create a new array in JavaScript?",
+        "options": ["[]", "new Array()", "array()", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "Which of the following is not a comparison operator in JavaScript?",
+        "options": ["==", "!==", ">", "<<"],
+        "answer": "<<"
+      },
+      {
+        "question": "What does 'this' refer to in JavaScript?",
+        "options": [
+          "The current object",
+          "The global object",
+          "The function itself",
+          "None of the above"
+        ],
+        "answer": "The current object"
+      },
+      {
+        "question": "What does the 'Array.isArray()' method do in JavaScript?",
+        "options": [
+          "Checks if a value is an array",
+          "Converts a value to an array",
+          "Adds elements to an array",
+          "Removes elements from an array"
+        ],
+        "answer": "Checks if a value is an array"
+      }
+    ],
+    "hard": [
+      {
+        "question": "What is the purpose of 'async' and 'await' in JavaScript?",
+        "options": [
+          "To handle asynchronous operations",
+          "To pause a function",
+          "To handle errors",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What will be the output of 'console.log([] == ![])' in JavaScript?",
+        "options": ["true", "false", "undefined", "NaN"],
+        "answer": "true"
+      },
+      {
+        "question": "What is a closure in JavaScript?",
+        "options": [
+          "A function with access to its own scope, the outer function’s scope, and the global scope",
+          "A function that runs only once",
+          "A block of code that can be executed",
+          "None of the above"
+        ],
+        "answer": "A function with access to its own scope, the outer function’s scope, and the global scope"
+      },
+      {
+        "question": "What does the 'bind()' method do in JavaScript?",
+        "options": [
+          "Creates a new function with a specified context",
+          "Creates a new array",
+          "Binds a variable to a function",
+          "None of the above"
+        ],
+        "answer": "Creates a new function with a specified context"
+      },
+      {
+        "question": "Which of the following is true about JavaScript promises?",
+        "options": [
+          "They are used for asynchronous operations",
+          "They can be resolved or rejected",
+          "They can be chained",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
+        "options": [
+          "'null' is an object, 'undefined' is a type",
+          "'null' is undefined",
+          "'null' is a string",
+          "'undefined' is null"
+        ],
+        "answer": "'null' is an object, 'undefined' is a type"
+      },
+      {
+        "question": "Which method is used to create an empty object in JavaScript?",
+        "options": [
+          "{}",
+          "new Object()",
+          "Object.create()",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What does 'Object.freeze()' do in JavaScript?",
+        "options": [
+          "Prevents modification of an object",
+          "Deletes an object",
+          "Makes an object immutable",
+          "Both of the above"
+        ],
+        "answer": "Both of the above"
+      },
+      {
+        "question": "Which JavaScript method can be used to combine two arrays?",
+        "options": ["concat()", "push()", "join()", "merge()"],
+        "answer": "concat()"
+      },
+      {
+        "question": "What is the purpose of 'call()' in JavaScript?",
+        "options": [
+          "It calls a function with a specific 'this' value",
+          "It creates a new object",
+          "It adds elements to an array",
+          "None of the above"
+        ],
+        "answer": "It calls a function with a specific 'this' value"
+      }
+    ]
+  },
+  "Angular": {
+    "category": "Front-End",
+    "image": "./assets/angular2.png",
+    "easy": [
+      {
+        "question": "Which of the following is used to define a component in Angular?",
+        "options": ["@Component", "@Directive", "@Injectable", "@NgModule"],
+        "answer": "@Component"
+      },
+      {
+        "question": "What is the default change detection strategy in Angular?",
+        "options": [
+          "OnPush",
+          "Default",
+          "ChangeDetectionStrategy",
+          "ChangeDetection"
+        ],
+        "answer": "Default"
+      },
+      {
+        "question": "Which Angular directive is used for iterating over a list of items?",
+        "options": ["*ngFor", "*ngIf", "*ngModel", "*ngSwitch"],
+        "answer": "*ngFor"
+      },
+      {
+        "question": "Which of the following is used to create a service in Angular?",
+        "options": [
+          "ng generate service",
+          "ng generate component",
+          "ng generate module",
+          "ng create service"
+        ],
+        "answer": "ng generate service"
+      },
+      {
+        "question": "What is the main purpose of Angular modules (@NgModule)?",
+        "options": [
+          "Organizing components, directives, pipes, and services",
+          "Handling routing",
+          "Managing forms",
+          "Testing Angular components"
+        ],
+        "answer": "Organizing components, directives, pipes, and services"
+      }
+    ],
+    "medium": [
+      {
+        "question": "Which lifecycle hook is called after Angular has initialized the input properties of a component?",
+        "options": [
+          "ngOnInit()",
+          "ngOnChanges()",
+          "ngDoCheck()",
+          "ngAfterViewInit()"
+        ],
+        "answer": "ngOnInit()"
+      },
+      {
+        "question": "What does the Angular CLI command ng serve do?",
+        "options": [
+          "It builds the application",
+          "It starts a development server",
+          "It runs unit tests",
+          "It generates components"
+        ],
+        "answer": "It starts a development server"
+      },
+      {
+        "question": "How would you declare a route in Angular?",
+        "options": [
+          "const routes = [{ path: 'home', component: HomeComponent }]",
+          "const routes = [{ url: 'home', component: HomeComponent }]",
+          "const routes = [{ path: 'home', module: HomeModule }]",
+          "const routes = [{ link: 'home', component: HomeComponent }]"
+        ],
+        "answer": "const routes = [{ path: 'home', component: HomeComponent }]"
+      },
+      {
+        "question": "Which operator is used to subscribe to an observable in Angular?",
+        "options": ["subscribe()", "next()", "complete()", "catch()"],
+        "answer": "subscribe()"
+      },
+      {
+        "question": "What is the purpose of the HttpClient module in Angular?",
+        "options": [
+          "To handle HTTP requests",
+          "To manage components",
+          "To perform routing",
+          "To generate services"
+        ],
+        "answer": "To handle HTTP requests"
+      }
+    ],
+    "hard": [
+      {
+        "question": "What is the purpose of 'ngOnChanges' in Angular?",
+        "options": [
+          "It is called when any of the input properties change",
+          "It is called when a component’s view is initialized",
+          "It is used to detect changes in service data",
+          "It is used to handle lifecycle changes of directives"
+        ],
+        "answer": "It is called when any of the input properties change"
+      },
+      {
+        "question": "Which Angular decorator is used to define an injectable service?",
+        "options": ["@Injectable", "@Service", "@Provider", "@Directive"],
+        "answer": "@Injectable"
+      },
+      {
+        "question": "What does the 'ngOnInit' lifecycle hook do?",
+        "options": [
+          "It initializes the component",
+          "It runs after Angular initializes the input properties of the component",
+          "It is called every time the component's view changes",
+          "It runs after the component is destroyed"
+        ],
+        "answer": "It runs after Angular initializes the input properties of the component"
+      },
+      {
+        "question": "How can you use a guard to prevent navigation in Angular?",
+        "options": [
+          "Using CanActivate",
+          "Using CanLoad",
+          "Using CanDeactivate",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the role of a Subject in Angular?",
+        "options": [
+          "It is a type of observable that can multicast to many observers",
+          "It is a one-time observable",
+          "It is used to manage component lifecycle events",
+          "It is used to create new components"
+        ],
+        "answer": "It is a type of observable that can multicast to many observers"
+      }
+    ]
+  },
+  "Node.js": {
+    "category": "Back-End",
+    "image": "./assets/node.png",
+    "easy": [
+      {
+        "question": "What is Node.js?",
+        "options": [
+          "A JavaScript runtime",
+          "A JavaScript library",
+          "A database",
+          "A framework"
+        ],
+        "answer": "A JavaScript runtime"
+      },
+      {
+        "question": "Which module is used to create an HTTP server in Node.js?",
+        "options": ["http", "fs", "url", "path"],
+        "answer": "http"
+      },
+      {
+        "question": "Which command is used to initialize a new Node.js project?",
+        "options": ["npm init", "node init", "npm start", "node start"],
+        "answer": "npm init"
+      },
+      {
+        "question": "Which of the following is used to install packages in Node.js?",
+        "options": ["npm", "node", "js", "server"],
+        "answer": "npm"
+      },
+      {
+        "question": "Which of the following is a core module in Node.js?",
+        "options": ["fs", "express", "mongodb", "react"],
+        "answer": "fs"
+      }
+    ],
+    "medium": [
+      {
+        "question": "What is the purpose of the 'require()' function in Node.js?",
+        "options": [
+          "To import modules",
+          "To define functions",
+          "To create a server",
+          "To handle HTTP requests"
+        ],
+        "answer": "To import modules"
+      },
+      {
+        "question": "How can you handle errors in Node.js?",
+        "options": [
+          "Try-catch block",
+          "Error handler middleware",
+          "Both of the above",
+          "None of the above"
+        ],
+        "answer": "Both of the above"
+      },
+      {
+        "question": "Which method is used to read a file asynchronously in Node.js?",
+        "options": [
+          "fs.readFile()",
+          "fs.writeFile()",
+          "fs.appendFile()",
+          "fs.rename()"
+        ],
+        "answer": "fs.readFile()"
+      },
+      {
+        "question": "Which of the following is the default port for a Node.js HTTP server?",
+        "options": ["3000", "8080", "4000", "5000"],
+        "answer": "3000"
+      },
+      {
+        "question": "Which package manager does Node.js use?",
+        "options": ["npm", "yarn", "bower", "pnpm"],
+        "answer": "npm"
+      }
+    ],
+    "hard": [
+      {
+        "question": "What is the purpose of the 'EventEmitter' class in Node.js?",
+        "options": [
+          "To handle asynchronous events",
+          "To manage database connections",
+          "To create HTTP requests",
+          "To schedule tasks"
+        ],
+        "answer": "To handle asynchronous events"
+      },
+      {
+        "question": "Which module can be used to manage streams in Node.js?",
+        "options": ["stream", "fs", "url", "path"],
+        "answer": "stream"
+      },
+      {
+        "question": "How do you handle synchronous errors in Node.js?",
+        "options": [
+          "Using try-catch blocks",
+          "Using promises",
+          "Using setTimeout",
+          "Using callback functions"
+        ],
+        "answer": "Using try-catch blocks"
+      },
+      {
+        "question": "What is the 'Cluster' module in Node.js used for?",
+        "options": [
+          "To handle multi-core systems",
+          "To create databases",
+          "To manage HTTP requests",
+          "To process files asynchronously"
+        ],
+        "answer": "To handle multi-core systems"
+      },
+      {
+        "question": "What is the difference between 'require()' and 'import' in Node.js?",
+        "options": [
+          "'require()' is synchronous, 'import' is asynchronous",
+          "'import' is synchronous, 'require()' is asynchronous",
+          "'require()' and 'import' are the same",
+          "'require()' is used for modules, 'import' is for files"
+        ],
+        "answer": "'require()' is synchronous, 'import' is asynchronous"
+      }
+    ]
+  },
+  "React": {
+    "category": "Front-End",
+    "image": "./assets/React.png",
+    "easy": [
+      {
+        "question": "What is React?",
+        "options": [
+          "A JavaScript library",
+          "A framework",
+          "A database",
+          "A programming language"
+        ],
+        "answer": "A JavaScript library"
+      },
+      {
+        "question": "Which method is used to update the state in React?",
+        "options": [
+          "setState()",
+          "updateState()",
+          "changeState()",
+          "modifyState()"
+        ],
+        "answer": "setState()"
+      },
+      {
+        "question": "What is JSX?",
+        "options": [
+          "JavaScript XML",
+          "JavaScript Extension",
+          "JavaScript XML Style",
+          "None of the above"
+        ],
+        "answer": "JavaScript XML"
+      },
+      {
+        "question": "Which React component lifecycle method is called after a component is rendered for the first time?",
+        "options": [
+          "componentDidMount()",
+          "componentWillMount()",
+          "shouldComponentUpdate()",
+          "render()"
+        ],
+        "answer": "componentDidMount()"
+      },
+      {
+        "question": "Which of the following is used to create a React component?",
+        "options": [
+          "class Component extends React.Component",
+          "function Component()",
+          "React.createComponent()",
+          "React.createElement()"
+        ],
+        "answer": "class Component extends React.Component"
+      }
+    ],
+    "medium": [
+      {
+        "question": "What is the purpose of props in React?",
+        "options": [
+          "To pass data to components",
+          "To handle component state",
+          "To manage user events",
+          "To update the UI"
+        ],
+        "answer": "To pass data to components"
+      },
+      {
+        "question": "Which of the following is a React hook for managing state?",
+        "options": ["useState", "useEffect", "useReducer", "All of the above"],
+        "answer": "useState"
+      },
+      {
+        "question": "What is the purpose of React's 'key' prop?",
+        "options": [
+          "To uniquely identify elements in a list",
+          "To specify styles",
+          "To manage component state",
+          "To bind event handlers"
+        ],
+        "answer": "To uniquely identify elements in a list"
+      },
+      {
+        "question": "What is the Virtual DOM in React?",
+        "options": [
+          "A lightweight copy of the actual DOM",
+          "A real-time representation of the DOM",
+          "A database for component data",
+          "An external library used for rendering"
+        ],
+        "answer": "A lightweight copy of the actual DOM"
+      },
+      {
+        "question": "Which of the following is a lifecycle method in React functional components?",
+        "options": [
+          "useEffect",
+          "componentDidMount",
+          "componentWillUnmount",
+          "render"
+        ],
+        "answer": "useEffect"
+      }
+    ],
+    "hard": [
+      {
+        "question": "What is the purpose of 'React.memo'?",
+        "options": [
+          "To prevent unnecessary re-rendering of functional components",
+          "To manage the state of a component",
+          "To handle the lifecycle of a component",
+          "To trigger component updates manually"
+        ],
+        "answer": "To prevent unnecessary re-rendering of functional components"
+      },
+      {
+        "question": "What does 'React.Fragment' do?",
+        "options": [
+          "It allows grouping multiple elements without adding extra nodes to the DOM",
+          "It manages component state",
+          "It creates new components",
+          "It renders elements to the server"
+        ],
+        "answer": "It allows grouping multiple elements without adding extra nodes to the DOM"
+      },
+      {
+        "question": "How can you prevent re-rendering of a component when its props do not change?",
+        "options": [
+          "By using React.memo()",
+          "By using shouldComponentUpdate()",
+          "By using PureComponent",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the 'useReducer' hook used for in React?",
+        "options": [
+          "For managing complex state logic",
+          "For managing component lifecycle",
+          "For managing event listeners",
+          "For performing side effects"
+        ],
+        "answer": "For managing complex state logic"
+      },
+      {
+        "question": "What is 'context' in React?",
+        "options": [
+          "A way to pass data through the component tree without having to pass props down manually",
+          "A lifecycle method",
+          "A way to trigger rerendering",
+          "A form of event handling"
+        ],
+        "answer": "A way to pass data through the component tree without having to pass props down manually"
+      }
+    ]
+  },
+  "UI/UX": {
+    "category": "UI/UX",
+    "image": "./assets/ux-ui.png",
+    "easy": [
+      {
+        "question": "What does UI stand for?",
+        "options": [
+          "User Interaction",
+          "User Interface",
+          "User Internet",
+          "User Integration"
+        ],
+        "answer": "User Interface"
+      },
+      {
+        "question": "What does UX stand for?",
+        "options": [
+          "User Xperience",
+          "User Expectation",
+          "User Experience",
+          "User Execution"
+        ],
+        "answer": "User Experience"
+      },
+      {
+        "question": "Which tool is commonly used for UI design?",
+        "options": ["Figma", "Excel", "Jira", "MongoDB"],
+        "answer": "Figma"
+      },
+      {
+        "question": "What is wireframing in UI/UX design?",
+        "options": [
+          "A blueprint for a web page layout",
+          "A coding technique",
+          "A branding strategy",
+          "A user testing method"
+        ],
+        "answer": "A blueprint for a web page layout"
+      },
+      {
+        "question": "What is the goal of UX design?",
+        "options": [
+          "Enhance user satisfaction",
+          "Improve visual aesthetics",
+          "Increase page load speed",
+          "Optimize database queries"
+        ],
+        "answer": "Enhance user satisfaction"
+      }
+    ],
+    "medium": [
+      {
+        "question": "What is the purpose of usability testing?",
+        "options": [
+          "To evaluate user satisfaction",
+          "To identify system bugs",
+          "To test application security",
+          "To measure server performance"
+        ],
+        "answer": "To evaluate user satisfaction"
+      },
+      {
+        "question": "What is the difference between UI and UX?",
+        "options": [
+          "UI focuses on appearance; UX focuses on functionality",
+          "UI focuses on coding; UX focuses on testing",
+          "UI focuses on branding; UX focuses on analytics",
+          "UI and UX are the same"
+        ],
+        "answer": "UI focuses on appearance; UX focuses on functionality"
+      },
+      {
+        "question": "Which principle improves accessibility in UI design?",
+        "options": [
+          "Using high color contrast",
+          "Adding complex animations",
+          "Minimizing text size",
+          "Removing alt text for images"
+        ],
+        "answer": "Using high color contrast"
+      },
+      {
+        "question": "What is a persona in UX design?",
+        "options": [
+          "A fictional user profile",
+          "A test case scenario",
+          "A project roadmap",
+          "A technical document"
+        ],
+        "answer": "A fictional user profile"
+      },
+      {
+        "question": "What is the primary focus of responsive design?",
+        "options": [
+          "Adapting layouts for different devices",
+          "Increasing page load speed",
+          "Improving animations",
+          "Enhancing SEO"
+        ],
+        "answer": "Adapting layouts for different devices"
+      }
+    ],
+    "hard": [
+      {
+        "question": "What is an A/B test in UX design?",
+        "options": [
+          "Comparing two design variations to determine which performs better",
+          "Analyzing user behavior using analytics",
+          "Creating a backup design for testing",
+          "Testing color schemes for UI elements"
+        ],
+        "answer": "Comparing two design variations to determine which performs better"
+      },
+      {
+        "question": "Which law states that users spend more time on pages that load faster?",
+        "options": [
+          "Hick's Law",
+          "Fitts's Law",
+          "Miller's Law",
+          "None of the above"
+        ],
+        "answer": "None of the above"
+      },
+      {
+        "question": "What is the purpose of a journey map in UX design?",
+        "options": [
+          "Visualizing the user’s interaction with a product",
+          "Creating a design roadmap",
+          "Setting goals for UI testing",
+          "Organizing team tasks"
+        ],
+        "answer": "Visualizing the user’s interaction with a product"
+      },
+      {
+        "question": "Which tool is used for prototyping in UI/UX?",
+        "options": ["Adobe XD", "Slack", "Jenkins", "Docker"],
+        "answer": "Adobe XD"
+      },
+      {
+        "question": "What is a heuristic evaluation in UX design?",
+        "options": [
+          "A usability inspection method",
+          "A system performance test",
+          "A database query evaluation",
+          "An accessibility standard"
+        ],
+        "answer": "A usability inspection method"
+      }
+    ]
+  },
+  "MongoDB": {
+    "category": "Back-End",
+    "image": "./assets/mongo.png",
+    "easy": [
+      {
+        "question": "What does MongoDB stand for?",
+        "options": [
+          "Nothing specific",
+          "Monolithic Database",
+          "Modern Group Database",
+          "Mongo Data Block"
+        ],
+        "answer": "Nothing specific"
+      },
+      {
+        "question": "What type of database is MongoDB?",
+        "options": ["Relational", "NoSQL", "Graph", "Document-Oriented"],
+        "answer": "Document-Oriented"
+      },
+      {
+        "question": "What is the default port for MongoDB?",
+        "options": ["27017", "3306", "5432", "8080"],
+        "answer": "27017"
+      },
+      {
+        "question": "Which command is used to start the MongoDB shell?",
+        "options": ["mongo", "mongod", "mongosh", "mongodb"],
+        "answer": "mongosh"
+      },
+      {
+        "question": "In MongoDB, what is a collection?",
+        "options": [
+          "A group of databases",
+          "A group of documents",
+          "A single document",
+          "A schema definition"
+        ],
+        "answer": "A group of documents"
+      }
+    ],
+    "medium": [
+      {
+        "question": "Which data format does MongoDB use to store documents?",
+        "options": ["JSON", "BSON", "XML", "YAML"],
+        "answer": "BSON"
+      },
+      {
+        "question": "What is the purpose of the `_id` field in MongoDB?",
+        "options": [
+          "Stores metadata about the document",
+          "Uniquely identifies a document",
+          "Links to another collection",
+          "Defines the schema of the document"
+        ],
+        "answer": "Uniquely identifies a document"
+      },
+      {
+        "question": "How do you query all documents in a collection?",
+        "options": [
+          "db.collection.find()",
+          "db.collection.all()",
+          "db.collection.query()",
+          "db.collection.getAll()"
+        ],
+        "answer": "db.collection.find()"
+      },
+      {
+        "question": "Which command is used to import data into MongoDB?",
+        "options": ["mongoimport", "mongoload", "mongoinsert", "db.import()"],
+        "answer": "mongoimport"
+      },
+      {
+        "question": "How do you create an index in MongoDB?",
+        "options": [
+          "db.collection.createIndex()",
+          "db.collection.addIndex()",
+          "db.createIndex()",
+          "db.index.create()"
+        ],
+        "answer": "db.collection.createIndex()"
+      }
+    ],
+    "hard": [
+      {
+        "question": "What does the `shard` key do in a sharded MongoDB cluster?",
+        "options": [
+          "Defines how data is distributed across shards",
+          "Encrypts the data stored in shards",
+          "Replicates data across shards",
+          "Creates indexes for each shard"
+        ],
+        "answer": "Defines how data is distributed across shards"
+      },
+      {
+        "question": "What is the Aggregation Framework in MongoDB used for?",
+        "options": [
+          "Joining collections",
+          "Performing advanced queries and data transformations",
+          "Storing relational data",
+          "Managing schema migrations"
+        ],
+        "answer": "Performing advanced queries and data transformations"
+      },
+      {
+        "question": "How do you enable replication in MongoDB?",
+        "options": [
+          "Use a replica set",
+          "Enable sharding",
+          "Create a backup",
+          "Use the `replication` command"
+        ],
+        "answer": "Use a replica set"
+      },
+      {
+        "question": "What does the `$lookup` stage do in an aggregation pipeline?",
+        "options": [
+          "Joins documents from two collections",
+          "Filters documents in a collection",
+          "Groups documents in a collection",
+          "Adds fields to documents"
+        ],
+        "answer": "Joins documents from two collections"
+      },
+      {
+        "question": "What is the oplog in MongoDB?",
+        "options": [
+          "A log of operations for replication",
+          "A log of queries",
+          "A log of schema changes",
+          "A log of index creations"
+        ],
+        "answer": "A log of operations for replication"
+      }
+    ]
+  },
+  "Figma": {
+    "category": "UI/UX",
+    "image": "./assets/figma_logo.png",
+    "easy": [
+      {
+        "question": "What is Figma used for?",
+        "options": [
+          "UI/UX design and prototyping",
+          "Database management",
+          "Backend development",
+          "Web hosting"
+        ],
+        "answer": "UI/UX design and prototyping"
+      },
+      {
+        "question": "Which feature allows real-time collaboration in Figma?",
+        "options": [
+          "Live Editing",
+          "Version Control",
+          "Prototype Sharing",
+          "Team Libraries"
+        ],
+        "answer": "Live Editing"
+      },
+      {
+        "question": "What type of tool is Figma?",
+        "options": [
+          "Cloud-based",
+          "Desktop-only",
+          "Mobile-only",
+          "Command-line"
+        ],
+        "answer": "Cloud-based"
+      },
+      {
+        "question": "What file format does Figma support for exporting designs?",
+        "options": ["PNG", "SVG", "JPG", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the default unit of measurement in Figma?",
+        "options": ["Pixels", "Inches", "Points", "Centimeters"],
+        "answer": "Pixels"
+      }
+    ],
+    "medium": [
+      {
+        "question": "What is the purpose of components in Figma?",
+        "options": [
+          "To create reusable elements",
+          "To link screens",
+          "To add animations",
+          "To store assets"
+        ],
+        "answer": "To create reusable elements"
+      },
+      {
+        "question": "Which feature in Figma allows you to maintain consistent designs across a project?",
+        "options": [
+          "Team Libraries",
+          "Prototyping",
+          "Version Control",
+          "Wireframing"
+        ],
+        "answer": "Team Libraries"
+      },
+      {
+        "question": "How can you share a Figma design with others?",
+        "options": [
+          "By generating a shareable link",
+          "By exporting the file as a PDF",
+          "By using email attachments",
+          "All of the above"
+        ],
+        "answer": "By generating a shareable link"
+      },
+      {
+        "question": "Which tool is used to create curved paths in Figma?",
+        "options": ["Pen Tool", "Shape Tool", "Curve Tool", "Path Tool"],
+        "answer": "Pen Tool"
+      },
+      {
+        "question": "What is the maximum zoom percentage in Figma?",
+        "options": ["400%", "1600%", "3200%", "6400%"],
+        "answer": "3200%"
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which plugin helps generate dummy content in Figma?",
+        "options": [
+          "Content Reel",
+          "Wireframe Generator",
+          "Lorem Ipsum",
+          "Iconify"
+        ],
+        "answer": "Content Reel"
+      },
+      {
+        "question": "Which feature allows you to animate transitions between frames in Figma?",
+        "options": [
+          "Smart Animate",
+          "Timeline Tool",
+          "Frame Link",
+          "Layer Motion"
+        ],
+        "answer": "Smart Animate"
+      },
+      {
+        "question": "What is the shortcut to duplicate an object in Figma?",
+        "options": [
+          "Ctrl+D (Windows) / Cmd+D (Mac)",
+          "Ctrl+Shift+D (Windows) / Cmd+Shift+D (Mac)",
+          "Alt+D (Windows) / Option+D (Mac)",
+          "Ctrl+Alt+D (Windows) / Cmd+Option+D (Mac)"
+        ],
+        "answer": "Ctrl+D (Windows) / Cmd+D (Mac)"
+      },
+      {
+        "question": "Which protocol is used for sharing files with external tools via Figma API?",
+        "options": ["REST", "SOAP", "GraphQL", "gRPC"],
+        "answer": "REST"
+      },
+      {
+        "question": "What is the maximum file size allowed in Figma for a single document?",
+        "options": ["1GB", "2GB", "500MB", "No limit"],
+        "answer": "No limit"
+      }
+    ]
+  }
 }

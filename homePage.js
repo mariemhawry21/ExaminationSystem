@@ -1,4 +1,6 @@
-let examContainer = document.getElementById("exams");
+let frontContainer = document.getElementById("exams");
+let uiContainer = document.getElementById("exams-ui");
+let backContainer = document.getElementById("exams-back");
 
 async function getData() {
   const url = "./examQues.json";
@@ -16,25 +18,27 @@ async function getData() {
   }
 }
 getData();
-const icons = [
-  "fab fa-html5",
-  "fab fa-css3-alt",
-  "fab fa-js",
-  "fab fa-angular",
-  "fab fa-node",
-  "fab fa-react",
-];
 
 function showCourses(courses) {
+  console.log(Object.entries(courses));
+
   Object.keys(courses).forEach((courseName, i) => {
     let courseCard = `
-            <div class="course-card col-12 col-md-6 col-lg-4">
-            <div><i class="${icons[i]} icon-card"></i></div>
+            <div class="course-card col-12 col-md-6 col-lg-4 p-0">
+            <div class="bg-white p-3"style="height:200px" ><img src="${courses[courseName]["image"]}" class="img-fluid" style="height:100%"/></div>
+            <div class="p-3">
                 <h2>${courseName}</h2> 
-                <button onclick="takeExam('${courseName}')">Take Exam</button>
+                <button class="fw-bold"  onclick="takeExam('${courseName}')">Take Exam</button>
+                </div>
             </div>
         `;
-    examContainer.innerHTML += courseCard;
+    if (courses[courseName]["category"] == "Front-End") {
+      frontContainer.innerHTML += courseCard;
+    } else if (courses[courseName]["category"] == "Back-End") {
+      backContainer.innerHTML += courseCard;
+    } else {
+      uiContainer.innerHTML += courseCard;
+    }
   });
 }
 
@@ -44,4 +48,3 @@ function takeExam(courseName) {
   location.href = `./Exam/start.html?course=${encodeURIComponent(courseName)}`;
   //else go to login page
 }
-
