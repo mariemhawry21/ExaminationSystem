@@ -1,13 +1,13 @@
 const emailInput = document.getElementById("emailInput");
-const errorEmail = document.querySelector(".errorEmail"); 
+const errorEmail = document.querySelector(".errorEmail");
 const errorPassword = document.querySelector(".errorPassword");
 const btnLogin = document.querySelector(".btnLogin");
-const errorButton = document.querySelector(".errorButton"); 
+const errorButton = document.querySelector(".errorButton");
 
 function validEmail() {
   const regExpressionEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   if (!regExpressionEmail.test(emailInput.value)) {
-    errorEmail.style.display = "block"; 
+    errorEmail.style.display = "block";
     return false;
   } else {
     errorEmail.style.display = "none";
@@ -17,7 +17,7 @@ function validEmail() {
 
 function validPassword() {
   if (passwordInput.value.length < 8) {
-    errorPassword.style.display = "block"; 
+    errorPassword.style.display = "block";
     return false;
   } else {
     errorPassword.style.display = "none";
@@ -26,27 +26,30 @@ function validPassword() {
 }
 
 function formSubmit(e) {
-  e.preventDefault(); 
+  e.preventDefault();
 
-  let isFormValid = validEmail() && validPassword(); 
+  let isFormValid = validEmail() && validPassword();
 
   if (isFormValid) {
-    const users = JSON.parse(localStorage.getItem("users")); 
+    const users = JSON.parse(localStorage.getItem("users"));
 
-    let userFound = false; 
+    let userFound = false;
 
     for (let i = 0; i < users.length; i++) {
-      if (users[i].email === emailInput.value && users[i].password === passwordInput.value) {
-        userFound = true; 
-        break; 
+      if (
+        users[i].email === emailInput.value &&
+        users[i].password === passwordInput.value
+      ) {
+        userFound = true;
+        break;
       }
     }
 
     if (userFound) {
-      window.location.href = "../index.html";
-      console.log("SUCCESS"); 
+      window.location.href = "../index.html?logged=true";
+      console.log("SUCCESS");
     } else {
-      errorButton.style.display = "block"; 
+      errorButton.style.display = "block";
     }
   }
 }
