@@ -37,7 +37,7 @@ let startExamBtn = document.querySelector(".startExam");
 if (startExamBtn) {
   startExamBtn.addEventListener("click", (e) => {
     if (checkTheChoosedLevel()) {
-      location.href = `./exam.html?course=${encodeURIComponent(
+      location.href = `./exam.html?course=${(
         courseName
       )}&level=${encodeURIComponent(choosedlevel)}`;
     }

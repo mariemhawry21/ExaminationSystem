@@ -45,14 +45,16 @@ function showCourses(courses) {
 const urlParams = new URLSearchParams(window.location.search);
 
 const logged = urlParams.get("logged");
-if (logged) {
+if (JSON.parse(localStorage.getItem("users"))[0].username) {
   document.querySelector(".LogIn").style.display = "none";
   document.querySelector(".profile").style.display = "flex";
 }
+
+
 function takeExam(courseName) {
   console.log(courseName);
   //check if he logged
-  if (logged) {
+  if (JSON.parse(localStorage.getItem("users"))[0].username) {
     location.href = `./Exam/start.html?course=${encodeURIComponent(
       courseName
     )}`;

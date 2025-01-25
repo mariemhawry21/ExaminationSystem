@@ -7,8 +7,17 @@
   border-radius: 10px;
   font-weight: bold;
 }
-.mainResult{
-    color: #1D4645;
-    font-size: 3rem;
-    margin: 20px 0;
+.mainResult {
+  color: #1d4645;
+  font-size: 3rem;
+  margin: 20px 0;
+}
+.try-btn {
+  display: block;
+  background-color: #1d4645;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
 }

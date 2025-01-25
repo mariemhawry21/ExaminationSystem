@@ -1,17 +1,14 @@
-const urlParams = new URLSearchParams(window.location.search);
+import Question from "../Questions/questionsClass.js";
 
+const urlParams = new URLSearchParams(window.location.search);
 const courseName = urlParams.get("course");
 const choosedLevel = urlParams.get("level").toLowerCase();
 
 let userSelections = [];
-
 let data = null;
-let lengthofQuestios = 0;
-
 let courseQuestion;
+let length;
 
-console.log(courseName);
-console.log(choosedLevel);
 async function fetchExamQuestions() {
   console.log("fectching data");
   const url = "../examQues.json";
@@ -22,7 +19,14 @@ async function fetchExamQuestions() {
       throw new Error(`Response status: ${response.status}`);
     }
     data = await response.json();
-    courseQuestion = data[courseName][choosedLevel];
+    let jsonQuestion = data[courseName][choosedLevel];
+
+    courseQuestion = jsonQuestion.map((el) => {
+      return new Question(el.question, el.options, el.answer);
+    });
+
+    courseQuestion = Question.shuffleArray(courseQuestion);
+    console.log(courseQuestion);
 
     if (!courseQuestion || courseQuestion.length === 0) {
       throw new Error(
@@ -42,14 +46,14 @@ async function fetchExamQuestions() {
 }
 
 fetchExamQuestions();
+
 let cnt = 0;
 
 function showQuestions() {
-  const questions = data[courseName][choosedLevel];
   const questionContainer = document.querySelector(".qeuestion");
-  const question = questions[cnt];
+  const question = courseQuestion[cnt];
 
-  console.log(question);
+  console.log("question",question);
 
   if (question) {
     const questionCard = `
@@ -99,6 +103,7 @@ function escapeHTML(text) {
   div.innerText = text;
   return div.innerHTML;
 }
+
 function getNextQuestion() {
   const selectedOption = document.querySelector(
     'input[name="question"]:checked'
@@ -203,15 +208,22 @@ function submitQuiz() {
       score++;
     }
   });
-  console.log(courseQuestion);
-  console.log(userSelections);
-  console.log(score);
+  console.log("course Ques",courseQuestion);
+  console.log("selcted answer ",userSelections);
+  console.log("score is",score);
   if (score >= length / 2) {
     location.href = `../Success/success.html?score=${score}&numberOfQuestions=${length}`;
   } else {
-    location.href = `../Fail/fail.html?score=${score}&numberOfQuestions=${length}`;
+    location.href = `../Fail/fail.html?score=${score}&numberOfQuestions=${length}&level=${choosedLevel}&courseName=${courseName}`;
   }
 }
 
+window.submitQuiz = submitQuiz;
+window.getNextQuestion = getNextQuestion;
+window.getPrevQuestion = getPrevQuestion;
 
 
+
+window.addEventListener("error", function () {
+  window.location.href = "../Error/error.html"; // Redirect to error page
+});
