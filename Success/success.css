@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(76, 72, 72) ;
+}
+.mainAdress
+{
+    text-align: center;
+    font-size: 20PX;
+    
+}
+
