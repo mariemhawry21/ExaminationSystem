@@ -1,6 +1,4 @@
-.activeHome {
-  color: #9747ff;
-}
+
 .navbar-brand {
   color: #9747ff;
 }
@@ -161,6 +159,26 @@ body{
   gap: 10px;  
 
   
+}
+.footerContainer{
+  background-color: #ffffff;
+}
+.footer-brand
+{
+ color:  #8535ed;
+ text-decoration: none;
+
+}
+.facebook a , .instgram a , .whatsabb a , .twitter a
+{
+  text-decoration: none;
+  color: #555;
+
+}
+.useful_Links a
+{
+  text-decoration: none;
+  color: #555;
 }
 
 

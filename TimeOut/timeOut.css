@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(76, 72, 72) ;
+}
+
+.mainResult{
+    color: #1D4645;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+.home-btn{
+    display: block;
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 150px;
+    margin: 0 20px;
+}
+.try-btn{
+    display: block;
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 150px;
+    margin: 0 20px; 
+}
+.home-btn:hover , .try-btn:hover
+{
+    background-color: rgb(113, 42, 179);
+
+}

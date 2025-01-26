@@ -1,4 +1,5 @@
 const emailInput = document.getElementById("emailInput");
+const passwordInput = document.getElementById("passwordInput");
 const errorEmail = document.querySelector(".errorEmail");
 const errorPassword = document.querySelector(".errorPassword");
 const btnLogin = document.querySelector(".btnLogin");
@@ -31,25 +32,18 @@ function formSubmit(e) {
   let isFormValid = validEmail() && validPassword();
 
   if (isFormValid) {
-    const users = JSON.parse(localStorage.getItem("users"));
+    const users = JSON.parse(localStorage.getItem("users")) || []; 
 
-    let userFound = false;
-
-    for (let i = 0; i < users.length; i++) {
-      if (
-        users[i].email === emailInput.value &&
-        users[i].password === passwordInput.value
-      ) {
-        userFound = true;
-        break;
-      }
-    }
+    const userFound = users.find(user => 
+      user.email === emailInput.value && user.password === passwordInput.value
+    );
 
     if (userFound) {
       window.location.href = "../index.html?logged=true";
       console.log("SUCCESS");
     } else {
       errorButton.style.display = "block";
+      console.log("FAILLL");
     }
   }
 }
