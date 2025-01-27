@@ -29,7 +29,7 @@ function showCourses(courses) {
             <div class="p-3">
                 <h2>${courseName}</h2> 
                 <button class="fw-bold"  onclick="takeExam('${courseName}')">Take Exam</button>
-                <button class="fw-bold add-btn" onclick="addToWaiting('${courseName}','${courses[courseName]["image"]}')">Add To Waiting List</button>
+                <button class="fw-bold add-btn" onclick="addToWaiting('${courseName}','${courses[courseName]["image"]}')">Add To Waiting </button>
                 </div>
             </div>
         `;
