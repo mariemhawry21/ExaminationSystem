@@ -191,7 +191,8 @@ function startTimer() {
 
 // Handle time OUT logic
 function TimeOut() {
-  location.href = "../TimeOut/timeOut.html";
+  location.href =
+    `../TimeOut/timeOut.html?level=${choosedLevel}&courseName=${cour/seName}`;
 }
 
 // Start the timer when the page loads or quiz starts
@@ -212,7 +213,7 @@ function submitQuiz() {
   console.log("selcted answer ",userSelections);
   console.log("score is",score);
   if (score >= length / 2) {
-    location.href = `../Success/success.html?score=${score}&numberOfQuestions=${length}`;
+    location.href = `../Success/success.html?score=${score}&numberOfQuestions=${length}&level=${choosedLevel}&courseName=${courseName}`;
   } else {
     location.href = `../Fail/fail.html?score=${score}&numberOfQuestions=${length}&level=${choosedLevel}&courseName=${courseName}`;
   }

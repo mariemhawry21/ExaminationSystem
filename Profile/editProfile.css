@@ -1,0 +1,35 @@
+body {
+  background-color: #fafafc;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  color: #9747ff;
+}
+.nav-link:hover {
+  color: #9747ff;
+}
+.pColor {
+  color: #9747ff;
+}
+.navBar {
+  background-color: #ffffff;
+}
+.profile {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile:hover {
+  background-color: #8535ed;
+  color: white;
+}

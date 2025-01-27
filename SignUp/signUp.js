@@ -101,21 +101,24 @@ function FormSubmit(e) {
     validCheckbox();
 
   if (isFormValid) {
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-    const findUser = users.find(user => user.email === email.value);
-    
-    if (findUser) {
-      errorEmail.textContent = "An account with this email already exists.";
-      errorEmail.style.display = "block";
-      return 1;
-    }
+    let users = JSON.parse(localStorage.getItem("username")) || [];
+    // const findUser = users.find((user) => user.email === email.value);
+
+    // if (findUser) {
+    //   errorEmail.textContent = "An account with this email already exists.";
+    //   errorEmail.style.display = "block";
+    //   return 1;
+    // }
     const newUser = {
       username: firstName.value + " " + lastName.value,
       email: email.value,
       password: password.value,
     };
-    users.push(newUser);
-    localStorage.setItem("users", JSON.stringify(users));
+    localStorage.setItem("username", JSON.stringify(newUser.username));
+    localStorage.setItem("email", JSON.stringify(newUser.email));
+    localStorage.setItem("password", JSON.stringify(newUser.password));
+    localStorage.setItem("coursesCompleted", JSON.stringify([]));
+    localStorage.setItem("coursesWaiting", JSON.stringify([]));
 
     successMessage.style.display = "block";
     setTimeout(() => {

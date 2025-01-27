@@ -5,31 +5,30 @@ body {
   box-sizing: border-box;
 }
 
-.navbar-brand {
-  color: #9747ff;
+.editBtn{
+    background-color: blueviolet;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
 }
-.nav-link:hover {
-  color: #9747ff;
-}
-.pColor {
-  color: #9747ff;
-}
-.navBar {
-  background-color: #ffffff;
-}
-  .profile {
-    border: 1px solid gray;
-    border-radius: 50%; 
-    width: 50px; 
-    height: 50px; 
+.profile-icon{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    margin: 0 10px; 
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .profile:hover {
-    background-color: #8535ed; 
-    color: white; 
-  }
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.courses-details{
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+}

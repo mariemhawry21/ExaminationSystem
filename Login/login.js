@@ -26,20 +26,22 @@ function validPassword() {
   }
 }
 
+let userFound = false;
 function formSubmit(e) {
   e.preventDefault();
 
   let isFormValid = validEmail() && validPassword();
 
   if (isFormValid) {
-    const users = JSON.parse(localStorage.getItem("users")) || []; 
+    const user = JSON.parse(localStorage.getItem("email")) || "";
 
-    const userFound = users.find(user => 
-      user.email === emailInput.value && user.password === passwordInput.value
-    );
+    const password = JSON.parse(localStorage.getItem("password")) || "";
 
+    if (user === emailInput.value && password === passwordInput.value) {
+      userFound = true;
+    }
     if (userFound) {
-      window.location.href = "../index.html?logged=true";
+      window.location.href = "../index.html";
       console.log("SUCCESS");
     } else {
       errorButton.style.display = "block";
