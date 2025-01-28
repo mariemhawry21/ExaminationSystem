@@ -26,10 +26,10 @@ if (levelBtns) {
 function checkTheChoosedLevel() {
   if (!choosedlevel) {
     document.querySelector(".error-select").style.visibility = "visible";
-    return false;
+    return false
   } else {
     document.querySelector(".error-select").style.visibility = "hidden";
-    return true;
+    return true
   }
 }
 
@@ -37,9 +37,9 @@ let startExamBtn = document.querySelector(".startExam");
 if (startExamBtn) {
   startExamBtn.addEventListener("click", (e) => {
     if (checkTheChoosedLevel()) {
-      location.href = `./exam.html?course=${courseName}&level=${encodeURIComponent(
-        choosedlevel
-      )}`;
+      location.href = `./exam.html?course=${(
+        courseName
+      )}&level=${encodeURIComponent(choosedlevel)}`;
     }
   });
 }
