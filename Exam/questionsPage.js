@@ -116,7 +116,7 @@ function getNextQuestion() {
   userSelections[cnt] = selectedOption.value;
   console.log(userSelections);
 
-  if (cnt < length - 2) {
+  if (cnt < length - 1) {
     cnt++;
     console.log(cnt);
     nextBtn.disabled = false;
