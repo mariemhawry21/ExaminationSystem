@@ -4,6 +4,8 @@ let backContainer = document.getElementById("exams-back");
 
 async function getData() {
   const url = "./examQues.json";
+  toggleLoading(true);
+
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -15,7 +17,14 @@ async function getData() {
     showCourses(json);
   } catch (error) {
     console.error(error.message);
+    location.href = `./Error/error.html?error=${error}`;
+  } finally {
+    toggleLoading(false);
   }
+}
+function toggleLoading(show) {
+  const loadingElement = document.querySelector(".loading");
+  loadingElement.style.display = show ? "block" : "none";
 }
 
 getData();

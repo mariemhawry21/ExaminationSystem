@@ -39,6 +39,8 @@ async function fetchExamQuestions() {
     showQuestions();
   } catch (error) {
     console.error(error.message);
+    location.href = `../Error/error.html?error=${encodeURIComponent(error.message)}`;
+
     displayErrorMessage(error.message);
   } finally {
     toggleLoading(false);

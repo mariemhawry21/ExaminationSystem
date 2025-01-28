@@ -1,0 +1,14 @@
+body {
+  background-color: blueviolet;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-transform: uppercase;
+}
+.error-container {
+    text-align: center;
+}
