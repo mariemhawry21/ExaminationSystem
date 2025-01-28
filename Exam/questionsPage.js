@@ -53,7 +53,7 @@ function showQuestions() {
   const questionContainer = document.querySelector(".qeuestion");
   const question = courseQuestion[cnt];
 
-  console.log("question",question);
+  console.log("question", question);
 
   if (question) {
     const questionCard = `
@@ -116,13 +116,13 @@ function getNextQuestion() {
   userSelections[cnt] = selectedOption.value;
   console.log(userSelections);
 
-  if (cnt < length - 1) {
+  if (cnt < length - 2) {
     cnt++;
     console.log(cnt);
     nextBtn.disabled = false;
-
     showQuestions();
   } else {
+    userSelections[cnt] = selectedOption.value;
     nextBtn.style.display = "none";
     document.querySelector("#submitBTN").style.display = "block";
   }
@@ -191,8 +191,9 @@ function startTimer() {
 
 // Handle time OUT logic
 function TimeOut() {
-  location.href =
-    `../TimeOut/timeOut.html?level=${choosedLevel}&courseName=${cour/seName}`;
+  location.href = `../TimeOut/timeOut.html?level=${choosedLevel}&courseName=${
+    cour / seName
+  }`;
 }
 
 // Start the timer when the page loads or quiz starts
@@ -209,9 +210,9 @@ function submitQuiz() {
       score++;
     }
   });
-  console.log("course Ques",courseQuestion);
-  console.log("selcted answer ",userSelections);
-  console.log("score is",score);
+  console.log("course Ques", courseQuestion);
+  console.log("selcted answer ", userSelections);
+  console.log("score is", score);
   if (score >= length / 2) {
     location.href = `../Success/success.html?score=${score}&numberOfQuestions=${length}&level=${choosedLevel}&courseName=${courseName}`;
   } else {
@@ -223,8 +224,8 @@ window.submitQuiz = submitQuiz;
 window.getNextQuestion = getNextQuestion;
 window.getPrevQuestion = getPrevQuestion;
 
-
-
 window.addEventListener("error", function () {
   window.location.href = "../Error/error.html"; // Redirect to error page
 });
+
+history.replaceState(null, null, window.location.href);

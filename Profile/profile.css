@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
 }
 
-.editBtn{
+.editBtn,.removeBtn{
     background-color: blueviolet;
     padding: 10px;
     text-decoration: none;
@@ -31,4 +31,17 @@ body {
     background-color: white;
     padding: 50px;
     border-radius: 20px;
+}
+.card{
+    transition: 0.5s all ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 0 10px 10px #f2f1f1;
+}
+.profilePic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: 5px solid white;
 }

@@ -117,6 +117,7 @@ function FormSubmit(e) {
     localStorage.setItem("username", JSON.stringify(newUser.username));
     localStorage.setItem("email", JSON.stringify(newUser.email));
     localStorage.setItem("password", JSON.stringify(newUser.password));
+    localStorage.setItem("image", JSON.stringify(""));
     localStorage.setItem("coursesCompleted", JSON.stringify([]));
     localStorage.setItem("coursesWaiting", JSON.stringify([]));
 
