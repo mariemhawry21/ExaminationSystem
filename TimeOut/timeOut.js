@@ -1,4 +1,4 @@
-const username = JSON.parse(localStorage.getItem("users"))[0].username;
+const username = JSON.parse(localStorage.getItem("username"));
 document.getElementById("username").textContent = username;
 
 

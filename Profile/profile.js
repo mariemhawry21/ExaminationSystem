@@ -90,6 +90,9 @@ function removeFromList(course) {
 }
 function displayData(data) {
   waitingContainer.innerHTML = "";
+  if (data.length === 0) {
+    waitingContainer.innerHTML = "<p> no waiting courses </p>";
+  }
   data.forEach((el) => {
     waitingContainer.innerHTML += `<div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
