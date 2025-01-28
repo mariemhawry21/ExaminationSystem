@@ -26,6 +26,9 @@ async function fetchExamQuestions() {
     });
 
     courseQuestion = Question.shuffleArray(courseQuestion);
+
+    // courseQuestion = courseQuestion.sort(() => Math.random() - 0.5);
+
     console.log(courseQuestion);
 
     if (!courseQuestion || courseQuestion.length === 0) {
@@ -59,6 +62,7 @@ function showQuestions() {
     const questionCard = `
         <div class="question-card">
           <h3>${question.question}</h3>
+
           <ul class="list-unstyled">
             ${question.options
               .map(
