@@ -5,7 +5,6 @@ let backContainer = document.getElementById("exams-back");
 async function getData() {
   const url = "./examQues.json";
   toggleLoading(true);
-
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -23,8 +22,12 @@ async function getData() {
   }
 }
 function toggleLoading(show) {
-  const loadingElement = document.querySelector(".loading");
-  loadingElement.style.display = show ? "block" : "none";
+  const loadingElements = document.querySelectorAll(".loading");
+  console.log(loadingElements);
+
+  loadingElements.forEach((loadingElement) => {
+    loadingElement.style.display = show ? "block" : "none";
+  });
 }
 
 getData();
