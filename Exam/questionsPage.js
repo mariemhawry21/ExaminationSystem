@@ -39,10 +39,13 @@ async function fetchExamQuestions() {
 
     console.log("data", data);
     length = courseQuestion.length;
+
     showQuestions();
   } catch (error) {
     console.error(error.message);
-    location.href = `../Error/error.html?error=${encodeURIComponent(error.message)}`;
+    location.href = `../Error/error.html?error=${encodeURIComponent(
+      error.message
+    )}`;
 
     displayErrorMessage(error.message);
   } finally {
@@ -83,9 +86,17 @@ function showQuestions() {
           <p class="plese-select-para"></p>
           <div class="d-flex justify-content-between">
           <div class="">
-          <button id="submitBTN" style="width:100px" class="bg-success fw-bold text-white text-uppercase border-0 p-2 rounded " onclick="submitQuiz()">Submit</button>
-          <button id="nextQuestion" style="width:100px" class="bg-success fw-bold text-white text-uppercase border-0 p-2 rounded " onclick="getNextQuestion()">Next</button>
+          ${
+            cnt === length - 1
+              ? `<button id="submitBTN" style="width:100px" class="bg-success fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="submitQuiz()">Submit</button>`
+              : `<button id="nextQuestion" style="width:100px" class="bg-success fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="getNextQuestion()">Next</button>`
+          }
           </div>
+          <div class="numbersDiv">
+          
+          <p class="QuestionNumber ${cnt == length - 1 ? "complete" : ""}">${
+      cnt + 1
+    }</p> of <p class="numberOfQuestions">${length}</p></div>
           <div class="">
           <button id="prevQuestion" style="width:100px" class="bg-danger fw-bold text-white text-uppercase border-0 p-2 rounded " onclick="getPrevQuestion()">Prev</button>
           </div>
@@ -121,15 +132,12 @@ function getNextQuestion() {
   }
   userSelections[cnt] = selectedOption.value;
   console.log(userSelections);
-
   if (cnt < length - 1) {
     cnt++;
     console.log(cnt);
     nextBtn.disabled = false;
     showQuestions();
   } else {
-    userSelections[cnt] = selectedOption.value;
-    nextBtn.style.display = "none";
     document.querySelector("#submitBTN").style.display = "block";
   }
 }
@@ -148,8 +156,12 @@ function getPrevQuestion() {
 
 //handle loading for fetching
 function toggleLoading(show) {
-  const loadingElement = document.querySelector(".loading");
-  loadingElement.style.display = show ? "block" : "none";
+  const loadingElements = document.querySelectorAll(".loading");
+  console.log(loadingElements);
+
+  loadingElements.forEach((loadingElement) => {
+    loadingElement.style.display = show ? "block" : "none";
+  });
 }
 
 //error function when fetching
