@@ -5,6 +5,7 @@ const courseName = urlParams.get("course");
 const choosedLevel = urlParams.get("level").toLowerCase();
 
 let userSelections = [];
+let flaggedQuestions = [];
 let data = null;
 let courseQuestion;
 let length;
@@ -26,8 +27,6 @@ async function fetchExamQuestions() {
     });
 
     courseQuestion = Question.shuffleArray(courseQuestion);
-
-    // courseQuestion = courseQuestion.sort(() => Math.random() - 0.5);
 
     console.log(courseQuestion);
 
@@ -66,13 +65,19 @@ function showQuestions() {
   if (question) {
     const questionCard = `
         <div class="question-card">
+        <div class="d-flex justify-content-between align-items-center">
           <h3>${question.question}</h3>
-
+          <p><i class="fa-regular fa-flag theFlag ${
+            flaggedQuestions.includes(cnt) ? "fa-solid" : "fa-regular"
+          } "></i></p>
+</div>
           <ul class="list-unstyled">
             ${question.options
               .map(
                 (option, idx) =>
-                  `<li class="m-2">
+                  `<li class="m-2 option-item ${
+                    userSelections[cnt] === option ? "selected" : ""
+                  }" >
                   <input type="radio" name="question" value="${escapeHTML(
                     option
                   )}" id="option${idx}" ${
@@ -88,8 +93,8 @@ function showQuestions() {
           <div class="">
           ${
             cnt === length - 1
-              ? `<button id="submitBTN" style="width:100px" class="bg-success fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="submitQuiz()">Submit</button>`
-              : `<button id="nextQuestion" style="width:100px" class="bg-success fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="getNextQuestion()">Next</button>`
+              ? `<button id="submitBTN" style="width:100px" class=" fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="submitQuiz()">Submit</button>`
+              : `<button id="nextQuestion" style="width:100px" class=" fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="getNextQuestion()">Next</button>`
           }
           </div>
           <div class="numbersDiv">
@@ -98,12 +103,29 @@ function showQuestions() {
       cnt + 1
     }</p> of <p class="numberOfQuestions">${length}</p></div>
           <div class="">
-          <button id="prevQuestion" style="width:100px" class="bg-danger fw-bold text-white text-uppercase border-0 p-2 rounded " onclick="getPrevQuestion()">Prev</button>
+          <button id="prevQuestion" style="width:100px" class=" fw-bold  text-uppercase  p-2 rounded " onclick="getPrevQuestion()">Prev</button>
           </div>
           </div>
         </div>
       `;
     questionContainer.innerHTML = questionCard;
+    //add listeners to lis to handle the color change
+    document.querySelectorAll(".option-item").forEach((item) => {
+      item.addEventListener("click", function () {
+        const radio = this.querySelector("input[type='radio']");
+        if (radio) {
+          radio.checked = true;
+          console.log("changed", radio.value);
+
+          document.querySelectorAll(".option-item").forEach((el) => {
+            el.classList.remove("selected");
+          });
+
+          this.classList.add("selected");
+        }
+      });
+    });
+    document.querySelector(".theFlag").addEventListener("click", handleFlag);
   }
 }
 
@@ -131,6 +153,7 @@ function getNextQuestion() {
     return;
   }
   userSelections[cnt] = selectedOption.value;
+
   console.log(userSelections);
   if (cnt < length - 1) {
     cnt++;
@@ -177,17 +200,21 @@ function showError(message) {
     const errorElement = document.createElement("p");
     errorElement.style.color = "red";
     errorElement.textContent = message;
+    document.querySelector(".plese-select-para").innerHTML = "";
     document.querySelector(".plese-select-para").appendChild(errorElement);
   }
 }
 
-let totalTime = 300; // Total time in seconds
+// Total time in seconds
+
+let totalTime = localStorage.getItem("remainingTime")
+  ? parseInt(localStorage.getItem("remainingTime"), 10)
+  : 300;
 
 function startTimer() {
   const timerElement = document.getElementById("timeRemaining");
 
   const timerInterval = setInterval(() => {
-    // Calculate minutes and seconds
     const minutes = Math.floor(totalTime / 60);
     const seconds = totalTime % 60;
 
@@ -196,12 +223,15 @@ function startTimer() {
       .padStart(2, "0")}`;
 
     totalTime--;
+    localStorage.setItem("remainingTime", totalTime);
+
     if (totalTime < 150) {
       timerElement.style.color = "red";
     }
 
     if (totalTime < 0) {
       clearInterval(timerInterval);
+      localStorage.removeItem("remainingTime");
       TimeOut();
     }
   }, 1000);
@@ -209,9 +239,7 @@ function startTimer() {
 
 // Handle time OUT logic
 function TimeOut() {
-  location.href = `../TimeOut/timeOut.html?level=${choosedLevel}&courseName=${
-    cour / seName
-  }`;
+  location.href = `../TimeOut/timeOut.html?level=${choosedLevel}&courseName=${courseName}`;
 }
 
 // Start the timer when the page loads or quiz starts
@@ -223,6 +251,9 @@ let score = 0;
 
 function submitQuiz() {
   console.log(courseQuestion);
+
+  localStorage.removeItem("remainingTime");
+
   courseQuestion.forEach((el, i) => {
     if (el.answer == userSelections[i]) {
       score++;
@@ -247,3 +278,41 @@ window.addEventListener("error", function () {
 });
 
 history.replaceState(null, null, window.location.href);
+
+function handleFlag() {
+  console.log("flagged");
+  const flagIcon = document.querySelector(".theFlag");
+
+  if (flaggedQuestions.includes(cnt)) {
+    // Remove from flagged list
+    flaggedQuestions = flaggedQuestions.filter((index) => index !== cnt);
+    flagIcon.classList.remove("fa-solid");
+    flagIcon.classList.add("fa-regular");
+  } else {
+    // Add to flagged list
+    flaggedQuestions.push(cnt);
+    flagIcon.classList.remove("fa-regular");
+    flagIcon.classList.add("fa-solid");
+  }
+  updateFlaggedContainer();
+}
+function updateFlaggedContainer() {
+  const flaggedContainer = document.querySelector(".flag-container");
+  flaggedContainer.innerHTML = "";
+  if (flaggedQuestions.length === 0) {
+    flaggedContainer.innerHTML = "no flagged questions";
+    return;
+  }
+
+  flaggedQuestions.forEach((index) => {
+    const button = document.createElement("button");
+    button.textContent = `Q ${index + 1}`;
+    button.classList.add("flagged-item");
+    button.addEventListener("click", () => goToFlaggedQuestion(index));
+    flaggedContainer.appendChild(button);
+  });
+}
+function goToFlaggedQuestion(index) {
+  cnt = index;
+  showQuestions();
+}
