@@ -87,6 +87,7 @@ input {
   color: blueviolet;
   font-size: 25px;
 }
+
 .flag-container {
   width: 30%;
   background-color: white;
@@ -109,4 +110,14 @@ input {
   height: 55px;
   border-radius: 50%;
   font-weight: bold;
+}
+
+.flag-container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .flag-container {
+    width: 30%;
+  }
 }

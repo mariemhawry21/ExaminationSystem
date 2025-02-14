@@ -28,7 +28,7 @@
     <script type="module" src="./questionsPage.js" defer></script>
   </head>
   <body>
-    <div class="overlay container">
+    <div class="overlay ">
       <div class="container m-5" id="examPage">
         <div class="d-flex justify-content-start mb-3 fw-bold">
           <div class="timer d-flex align-items-center">
@@ -37,7 +37,9 @@
           </div>
         </div>
         <div class="loading" style="display: none">Loading...</div>
-        <div class="d-flex justify-content-between gap-2">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between gap-2"
+        >
           <div class="qeuestion"></div>
           <div class="flag-container">no flagged questions</div>
         </div>
