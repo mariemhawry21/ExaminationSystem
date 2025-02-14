@@ -1,4 +1,3 @@
-
 .navbar-brand {
   color: #9747ff;
 }
@@ -8,10 +7,10 @@
 .pColor {
   color: #9747ff;
 }
-body{
-  background-color: #FAFAFC;
+body {
+  background-color: #fafafc;
 }
-.profile{
+.profile {
   border: 1px solid gray;
   border-radius: 50%;
   width: 50px;
@@ -19,13 +18,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:  0 10px;
+  margin: 0 10px;
 }
-.profile:hover{
+.profile:hover {
   background-color: #8535ed;
   color: white;
 }
-.about-title{
+.about-title {
   color: #eee;
   line-height: 1.5;
   margin-top: 20px;
@@ -36,22 +35,19 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .navBar {
   background-color: rgb(255, 255, 255);
 }
-.sectionAbbout{
+.sectionAbbout {
   background-color: #9747ff;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
-#containerRow
-{
+#containerRow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -59,12 +55,12 @@ body{
 .sectionAbbout .col-12 {
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
   padding: 30px;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   max-width: 100%;
   margin: 10px 0;
@@ -92,15 +88,19 @@ body{
   margin-top: 10px;
 }
 
-
-.icon-card{
+.icon-card {
   font-size: 3rem;
 }
-.main-title{
+.main-title {
   font-size: 5rem;
 }
-.title{
-  color: #1D4645;
+@media (max-width: 420px) {
+  .main-title {
+    font-size: 3rem;
+  }
+}
+.title {
+  color: #1d4645;
   font-weight: bold;
 }
 .course-card {
@@ -127,11 +127,10 @@ body{
 }
 
 .course-card button:hover {
-  background-color:  #8535ed;
+  background-color: #8535ed;
 }
 
-.dropdown-btn
-{
+.dropdown-btn {
   width: 100%;
   border: none;
   padding: 10px;
@@ -142,52 +141,34 @@ body{
   z-index: 1;
 }
 
-
 .dropdown-content.show {
   display: block;
 }
-.cloud
-{
+.cloud {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.icon-continer
-{
+.icon-continer {
   display: flex;
   flex-direction: row;
-  gap: 10px;  
-
-  
+  gap: 10px;
 }
-.footerContainer{
+.footerContainer {
   background-color: #ffffff;
 }
-.footer-brand
-{
- color:  #8535ed;
- text-decoration: none;
-
-}
-.facebook a , .instgram a , .whatsabb a , .twitter a
-{
+.footer-brand {
+  color: #8535ed;
   text-decoration: none;
-  color: #555;
-
 }
-.useful_Links a
-{
+.facebook a,
+.instgram a,
+.whatsabb a,
+.twitter a {
   text-decoration: none;
   color: #555;
 }
-
-
-
-
-
-
-
-
-
-
-
+.useful_Links a {
+  text-decoration: none;
+  color: #555;
+}
