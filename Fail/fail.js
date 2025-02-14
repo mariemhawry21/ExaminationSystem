@@ -7,7 +7,9 @@ const Level = urlParams.get("level");
 let resultPara = document.querySelector(".result");
 resultPara.innerHTML = (parseInt(Score) * 100) / parseInt(ques);
 
-history.replaceState(null, null, window.location.href);
+// history.replaceState(null, null, window.location.href);
+history.replaceState(null, null, window.location.pathname);
+
 
 const username = JSON.parse(localStorage.getItem("username"));
 document.getElementById("username").textContent = username;

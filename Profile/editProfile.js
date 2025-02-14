@@ -72,7 +72,9 @@ saveChangesBtn.addEventListener("click", (e) => {
     };
     reader.readAsDataURL(profilePictureInput.files[0]);
   }
-  history.replaceState(null, null, window.location.href);
+  // history.replaceState(null, null, window.location.href);
+  history.replaceState(null, null, window.location.pathname);
+
 
   location.href = "./profile.html";
 });
