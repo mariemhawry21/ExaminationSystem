@@ -277,7 +277,9 @@ window.addEventListener("error", function () {
   window.location.href = "../Error/error.html"; // Redirect to error page
 });
 
-history.replaceState(null, null, window.location.href);
+// history.replaceState(null, null, window.location.href);
+history.replaceState(null, null, window.location.pathname);
+
 
 function handleFlag() {
   console.log("flagged");
