@@ -8,7 +8,6 @@ const Level = urlParams.get("level");
 console.log(Score);
 console.log(ques);
 
-history.replaceState(null, null, window.location.pathname);
 
 let resultPara = document.querySelector(".result");
 resultPara.innerHTML = (parseInt(Score) * 100) / parseInt(ques);
@@ -26,14 +25,16 @@ const courseData = {
 
 let courses = JSON.parse(localStorage.getItem("coursesCompleted")) || [];
 
-
 const existingCourseIndex = courses.findIndex(
   (el) => el.courseName === course && el.level === Level
 );
 
 if (existingCourseIndex !== -1) {
   const existingCourse = courses[existingCourseIndex];
-  if (parseInt(existingCourse.degree) !== parseInt(Score) && existingCourse.level===Level) {
+  if (
+    parseInt(existingCourse.degree) !== parseInt(Score) &&
+    existingCourse.level === Level
+  ) {
     courses[existingCourseIndex] = courseData;
     console.log("Course updated at the same level:", courseData);
   } else {

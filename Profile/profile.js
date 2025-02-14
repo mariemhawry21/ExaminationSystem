@@ -112,7 +112,7 @@ function displayData(data) {
     </div>
     <div class="col-md-8">
       <div class="card-body d-flex justify-content-between">
-        <h5 class="card-title">${el.courseName}</h5>
+        <h5 class="card-tiئtle">${el.courseName}</h5>
         <button class="removeBtn"onclick="removeFromList('${el.courseName}')" style="width:100px">Remove</button>
       </div>
     </div>

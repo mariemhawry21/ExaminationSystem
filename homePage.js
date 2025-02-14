@@ -54,7 +54,6 @@ function showCourses(courses) {
       uiContainer.innerHTML += courseCard;
     }
 
-    // Update the button text if the course is in the waiting list
     updateButtonText(courseName);
   });
 }
@@ -66,7 +65,6 @@ if (JSON.parse(localStorage.getItem("username"))) {
 
 function takeExam(courseName) {
   console.log(courseName);
-  // Check if the user is logged in
   if (JSON.parse(localStorage.getItem("username"))) {
     location.href = `./Exam/start.html?course=${encodeURIComponent(
       courseName
@@ -78,6 +76,10 @@ function takeExam(courseName) {
 }
 
 function addToWaiting(courseName, url) {
+  if (!JSON.parse(localStorage.getItem("username"))) {
+    location.href = `./Login/login.html`;
+    return;
+  }
   let waitingCourses = JSON.parse(localStorage.getItem("coursesWaiting")) || [];
   const courseIndex = waitingCourses.findIndex(
     (course) => course.courseName === courseName
