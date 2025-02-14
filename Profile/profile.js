@@ -61,6 +61,17 @@ if (coursesCompleted.length === 0) {
 `;
   });
 }
+
+// // i check if there is any course completed still exist in waiting list
+// coursesWaiting = coursesWaiting.filter(
+//   (waitingCourse) =>
+//     !coursesCompleted.some(
+//       (completedCourse) =>
+//         completedCourse.courseName === waitingCourse.courseName
+//     )
+// );
+// localStorage.setItem("coursesWaiting", JSON.stringify(coursesWaiting));
+
 if (coursesWaiting.length === 0) {
   waitingContainer.innerHTML = "<p> no waiting courses </p>";
 } else {
