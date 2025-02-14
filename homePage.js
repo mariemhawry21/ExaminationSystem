@@ -71,6 +71,7 @@ function takeExam(courseName) {
     location.href = `./Exam/start.html?course=${encodeURIComponent(
       courseName
     )}`;
+    //./Exam/start.html?course=JavaScript
   } else {
     location.href = `./Login/login.html`;
   }
