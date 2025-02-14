@@ -43,8 +43,12 @@ function formSubmit(e) {
     if (userFound) {
       window.location.href = "../index.html";
       console.log("SUCCESS");
+    } else if (user == emailInput.value && password !== passwordInput.value) {
+      errorButton.style.display = "block";
+      errorButton.innerHTML = "incorrect password";
     } else {
       errorButton.style.display = "block";
+      errorButton.innerHTML = "user not found please sign up";
       console.log("FAILLL");
     }
   }

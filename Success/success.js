@@ -8,7 +8,7 @@ const Level = urlParams.get("level");
 console.log(Score);
 console.log(ques);
 
-history.replaceState(null, null, window.location.href);
+history.replaceState(null, null, window.location.pathname);
 
 let resultPara = document.querySelector(".result");
 resultPara.innerHTML = (parseInt(Score) * 100) / parseInt(ques);

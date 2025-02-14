@@ -104,7 +104,7 @@ function updateButtonText(courseName, text = null) {
       if (text) {
         button.innerHTML = text;
       } else {
-        // Check if the course is in the waiting list
+        // Check if the course is in the waiting list at first time when render cards and waiting courses from waiting array
         let waitingCourses =
           JSON.parse(localStorage.getItem("coursesWaiting")) || [];
         const courseIndex = waitingCourses.findIndex(

@@ -45,7 +45,6 @@ async function fetchExamQuestions() {
     location.href = `../Error/error.html?error=${encodeURIComponent(
       error.message
     )}`;
-
     displayErrorMessage(error.message);
   } finally {
     toggleLoading(false);
@@ -109,6 +108,7 @@ function showQuestions() {
         </div>
       `;
     questionContainer.innerHTML = questionCard;
+
     //add listeners to lis to handle the color change
     document.querySelectorAll(".option-item").forEach((item) => {
       item.addEventListener("click", function () {
@@ -189,7 +189,7 @@ function toggleLoading(show) {
 
 //error function when fetching
 function displayErrorMessage(message) {
-  const questionContainer = document.querySelector(".question");
+  const questionContainer = document.querySelector(".qeuestion");
   questionContainer.innerHTML = `<p class="error-message">${message}</p>`;
 }
 
@@ -268,7 +268,7 @@ function submitQuiz() {
     location.href = `../Fail/fail.html?score=${score}&numberOfQuestions=${length}&level=${choosedLevel}&courseName=${courseName}`;
   }
 }
-
+//add functions globaly so that can be seen if he element still not rendered in html yet
 window.submitQuiz = submitQuiz;
 window.getNextQuestion = getNextQuestion;
 window.getPrevQuestion = getPrevQuestion;
@@ -277,7 +277,6 @@ window.addEventListener("error", function () {
   window.location.href = "../Error/error.html"; // Redirect to error page
 });
 
-history.replaceState(null, null, window.location.href);
 
 function handleFlag() {
   console.log("flagged");
