@@ -89,20 +89,21 @@ function showQuestions() {
           </ul>
           <p class="plese-select-para"></p>
           <div class="d-flex justify-content-between">
-          <div class="">
-          ${
-            cnt === length - 1
-              ? `<button id="submitBTN" style="width:100px" class=" fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="submitQuiz()">Submit</button>`
-              : `<button id="nextQuestion" style="width:100px" class=" fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="getNextQuestion()">Next</button>`
-          }
+           <div class="">
+          <button id="prevQuestion" style="width:100px" class=" fw-bold  text-uppercase  p-2 rounded " onclick="getPrevQuestion()">Prev</button>
           </div>
+        
           <div class="numbersDiv">
           
           <p class="QuestionNumber ${cnt == length - 1 ? "complete" : ""}">${
       cnt + 1
     }</p> of <p class="numberOfQuestions">${length}</p></div>
-          <div class="">
-          <button id="prevQuestion" style="width:100px" class=" fw-bold  text-uppercase  p-2 rounded " onclick="getPrevQuestion()">Prev</button>
+           <div class="">
+          ${
+            cnt === length - 1
+              ? `<button id="submitBTN" style="width:100px" class=" fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="submitQuiz()">Submit</button>`
+              : `<button id="nextQuestion" style="width:100px" class=" fw-bold text-white text-uppercase border-0 p-2 rounded" onclick="getNextQuestion()">Next</button>`
+          }
           </div>
           </div>
         </div>

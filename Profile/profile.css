@@ -5,43 +5,56 @@ body {
   box-sizing: border-box;
 }
 
-.editBtn,.removeBtn{
-    background-color: blueviolet;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 15px;
-    width: 150px;
-    text-align: center;
-    text-transform: uppercase;
+.editBtn,
+.removeBtn {
+  background-color: blueviolet;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+  text-transform: uppercase;
 }
-.profile-icon{
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
+.profile-icon {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
-.courses-details{
-    background-color: white;
-    padding: 50px;
-    border-radius: 20px;
+.courses-details {
+  background-color: white;
+  padding: 50px;
+  border-radius: 20px;
 }
-.card{
-    transition: 0.5s all ease-in-out;
+.card {
+  transition: 0.5s all ease-in-out;
 }
-.card:hover{
-    box-shadow: 0 0 10px 10px #f2f1f1;
+.card:hover {
+  box-shadow: 0 0 10px 10px #f2f1f1;
 }
-.profilePic{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    outline: 5px solid white;
+.profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  outline: 5px solid white;
+}
+.logOutBtn {
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: bold;
+  border: 1px solid blueviolet;
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+  text-transform: uppercase;
 }

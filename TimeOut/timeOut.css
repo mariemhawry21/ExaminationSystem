@@ -23,9 +23,11 @@ body{
 }
 .try-btn{
     display: block;
-    background-color: blueviolet;
+      border: 1px solid blueviolet;
+
+    background-color: transparent;
     padding: 10px;
-    color: white;
+    color: blueviolet;
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;

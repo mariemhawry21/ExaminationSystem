@@ -120,3 +120,11 @@ function displayData(data) {
 </div>`;
   });
 }
+
+document.querySelector(".logOutBtn").addEventListener("click", () => {
+  localStorage.removeItem("username");
+  localStorage.removeItem("coursesWaiting");
+  localStorage.removeItem("coursesCompleted");
+  localStorage.removeItem("email");
+  location.href = "../index.html";
+});

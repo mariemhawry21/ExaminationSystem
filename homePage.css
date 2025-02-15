@@ -172,3 +172,9 @@ body {
   text-decoration: none;
   color: #555;
 }
+
+.add-btn{
+  background-color: transparent !important;
+  border: 1px solid blueviolet !important;
+  color: blueviolet !important;
+}

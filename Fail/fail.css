@@ -14,9 +14,10 @@
 }
 .try-btn {
   display: block;
-  background-color: #1d4645;
+  background-color: transparent;
+  border: 1px solid blueviolet;
   padding: 10px;
-  color: white;
+  color: blueviolet;
   text-decoration: none;
   border-radius: 10px;
   font-weight: bold;

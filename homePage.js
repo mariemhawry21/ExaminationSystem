@@ -41,8 +41,10 @@ function showCourses(courses) {
             <div class="bg-white p-3" style="height:200px" ><img src="${courses[courseName]["image"]}" class="img-fluid" style="height:100%"/></div>
             <div class="p-3">
                 <h2>${courseName}</h2> 
-                <button class="fw-bold" onclick="takeExam('${courseName}')">Take Exam</button>
-                <button class="fw-bold add-btn" id="btn-${courseName}" onclick="addToWaiting('${courseName}','${courses[courseName]["image"]}')">Add To Waiting </button>
+                <div class="d-flex flex-column align-items-center  justify-content-center">
+                <button class="fw-bold w-50" onclick="takeExam('${courseName}')">Take Exam</button>
+                <button class="fw-bold add-btn w-50" id="btn-${courseName}" onclick="addToWaiting('${courseName}','${courses[courseName]["image"]}')">Add To Waiting </button>
+                </div>
                 </div>
             </div>
         `;
