@@ -20,7 +20,7 @@ This is a web-based examination system that includes:
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/mariemhawry21/ExaminationSystem.git
    ```
 2. Navigate to the project directory:
    ```sh
