@@ -20,12 +20,14 @@ body {
   box-sizing: border-box;
 }
 
-.formSUBJECT, .password {
+.formSUBJECT,
+.password {
   display: flex;
   flex-direction: column;
 }
 
-.input:focus, .input:hover {
+.input:focus,
+.input:hover {
   background-color: #ffffff !important;
   border-color: #e7e8e9 !important;
   outline: none;
@@ -41,7 +43,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   justify-content: center;
-  width: 200px;
+  width: 100%;
 }
 
 .btnLogin:hover {
@@ -50,16 +52,16 @@ body {
 }
 
 .btnLogin:active {
-  background-color:  #9747ff;
+  background-color: #9747ff;
 }
 
 .login {
   margin-top: 50px;
   text-align: center;
   justify-content: center;
+  width: 100%;
 }
-.login p 
-{
+.login p {
   margin-top: 20px;
 }
 
@@ -88,36 +90,47 @@ body {
   display: none;
   color: red;
 }
-.errorButton
-{
+.errorButton {
   display: none;
   color: red;
 }
-.createAccount{
+.createAccount {
   color: #434145;
-  font-size: 16 PX;
+  font-size: 16px;
+  text-align: center;
 }
-
+.createAccount a {
+  color: #434145;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
 @media (max-width: 768px) {
   body {
-      margin: 50px;
+    margin: 50px;
   }
 
   .loginPicContiner {
-      display: none;
+    display: none;
   }
 
   .loginFormContiner {
-      width: 100%;
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
   .loginPicContiner {
-      display: none;
+    display: none;
   }
 
   .loginFormContiner {
-      width: 100%;
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  .btnLogin {
+    width: 100% !important;
   }
 }
